@@ -1,0 +1,8 @@
+{
+  "name": "training.thewagner.net",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "metrics-graphics": "^2.15.6"
+  },
+  "private": true
+}

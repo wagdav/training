@@ -1,0 +1,38 @@
+---
+title: Index
+---
+
+<div id="missing-y"></div>
+
+<script>
+d3.json('data/missing-y.json', function(data) {
+    data = MG.convert.date(data, 'date');
+    MG.data_graphic({
+        data: data,
+        chart_type: 'point',
+        full_width: true,
+        missing_is_zero: true,
+        target: '#missing-y',
+        size_accessor: 'value',
+        y_accessor: 'y',
+        y_axis: false,
+        size_range: [5, 50],
+        min_x: new Date('2018-10-22'),
+        max_x: new Date('2018-10-28'),
+        target: '#missing-y',
+        mouseover: function(d, i) {
+            var df = d3.timeFormat('%b %d, %Y');
+            var date = df(d.date);
+            var y_val = (d.value === 0) ? 'no data' : d.value;
+
+            d3.select('#missing-y svg .mg-active-datapoint')
+                .text(date +  '   ' + y_val);
+        }
+    });
+});
+</script>
+
+<h2>Recent activities</h2>
+$partial("templates/post-list.html")$
+
+<p>…or you can find more in the <a href="/archive">archives</a>.</p>
