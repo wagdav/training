@@ -1,5 +1,4 @@
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid                    ( mappend )
 import           Hakyll
 import           System.FilePath
 import           Data.List                      ( isSuffixOf )
@@ -58,10 +57,11 @@ main = hakyllWith config $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll pattern
-            let ctx =
-                    constField "title" title
-                        <> listField "posts" (postCtx tags) (return posts)
-                        <> defaultContext
+            let ctx = mconcat
+                    [ constField "title" title
+                    , listField "posts" (postCtx tags) (return posts)
+                    , defaultContext
+                    ]
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -72,10 +72,11 @@ main = hakyllWith config $ do
         route cleanRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
-            let archiveCtx =
-                    listField "posts" (postCtx tags) (return posts)
-                        `mappend` constField "title" "Archives"
-                        `mappend` defaultContext
+            let archiveCtx = mconcat
+                    [ listField "posts" (postCtx tags) (return posts)
+                    , constField "title" "Archives"
+                    , defaultContext
+                    ]
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
@@ -87,10 +88,11 @@ main = hakyllWith config $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx =
-                    listField "posts" (postCtx tags) (return posts)
-                        `mappend` constField "title" "Home"
-                        `mappend` defaultContext
+            let indexCtx = mconcat
+                    [ listField "posts" (postCtx tags) (return posts)
+                    , constField "title" "Home"
+                    , defaultContext
+                    ]
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
