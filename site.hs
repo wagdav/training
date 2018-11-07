@@ -3,7 +3,7 @@ import           Hakyll
 import           System.FilePath
 import           Data.List                      ( isSuffixOf )
 import qualified System.Process                as Process
-import           System.Exit                    ( ExitCode )
+import           System.Exit
 
 
 main :: IO ()
@@ -137,8 +137,16 @@ config :: Configuration
 config = defaultConfiguration { deploySite = deploy }
   where
     deploy :: Configuration -> IO ExitCode
-    deploy _ = do
-        Process.rawSystem "yarn" ["install"]
-        Process.rawSystem "stack" ["exec", "site", "rebuild"]
-        Process.rawSystem "ghp-import" ["_site", "-m", "Automatic update"]
-        Process.rawSystem "git" ["push", "origin", "gh-pages"]
+    deploy _ = run "yarn" ["install"]
+            && run "stack" ["exec", "site", "rebuild"]
+            && run "ghp-import" ["_site", "-m", "Automatic update"]
+            && run "git" ["push", "origin", "gh-pages"]
+
+    run = Process.rawSystem
+
+    (&&) :: Monad m => m ExitCode -> m ExitCode -> m ExitCode
+    cmd1 && cmd2 = do
+        r <- cmd1
+        case r of
+            ExitSuccess -> cmd2
+            _           -> return r
