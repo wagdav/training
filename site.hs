@@ -90,7 +90,6 @@ main = hakyllWith config $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx = mconcat
                     [ listField "posts" (postCtx tags) (return posts)
-                    , constField "title" "Home"
                     , defaultContext
                     ]
 
