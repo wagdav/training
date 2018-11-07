@@ -88,10 +88,12 @@ main = hakyllWith config $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx = mconcat
-                    [ listField "posts" (postCtx tags) (return posts)
-                    , defaultContext
-                    ]
+            let
+                indexCtx =
+                    mconcat
+                        [ listField "posts" (postCtx tags) (return posts)
+                        , defaultContext
+                        ]
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
