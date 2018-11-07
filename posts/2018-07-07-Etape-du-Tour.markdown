@@ -1,6 +1,6 @@
 ---
 title: Etape du Tour 2018
-tags: race
+tags: race, ride
 ---
 
 Profile

@@ -1,6 +1,6 @@
 ---
 title: Morat-Fribourg 2018
-tags: race
+tags: race, run
 ---
 
 # Summary
