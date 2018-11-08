@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: fpco/stack-build
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys: stack
+
+      - run:
+          name: install dependencies
+          command: |
+            stack --no-terminal --install-ghc test --only-dependencies
+
+      - save_cache:
+          paths:
+            - ~/.stack
+          key: stack
+
+      - run:
+          name: build
+          command: |
+            stack --no-terminal test
