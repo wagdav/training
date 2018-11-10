@@ -8,17 +8,13 @@ import           System.Exit
 
 main :: IO ()
 main = hakyllWith config $ do
-    match "images/*" $ do
+    match ("data/*" .||. "images/*") $ do
         route idRoute
         compile copyFileCompiler
 
     match "css/*" $ do
         route idRoute
         compile compressCssCompiler
-
-    match "data/*" $ do
-        route idRoute
-        compile copyFileCompiler
 
     match (fromList nodeModulesJs) $ do
         route assets
