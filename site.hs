@@ -24,7 +24,14 @@ main = hakyllWith config $ do
         route assets
         compile compressCssCompiler
 
-    match (fromList ["about.markdown"]) $ do
+    match "404.md" $ do
+        route $ setExtension "html"
+        compile
+            $   pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    match (fromList ["about.md"]) $ do
         route cleanRoute
         compile
             $   pandocCompiler
