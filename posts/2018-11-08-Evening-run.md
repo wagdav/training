@@ -1,6 +1,7 @@
 ---
 title: Evening run
 time: 30m
+distance: 5
 tags: run
 ---
 

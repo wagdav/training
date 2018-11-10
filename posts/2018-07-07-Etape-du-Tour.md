@@ -1,6 +1,7 @@
 ---
 title: Etape du Tour 2018
 tags: race, ride
+distance: 159
 ---
 
 Profile

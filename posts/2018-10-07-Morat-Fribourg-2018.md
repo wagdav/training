@@ -1,5 +1,6 @@
 ---
 title: Morat-Fribourg 2018
+distance: 17
 tags: race, run
 ---
 
