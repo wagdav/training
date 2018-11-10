@@ -8,7 +8,7 @@ import           System.Exit
 
 main :: IO ()
 main = hakyllWith config $ do
-    match ("data/*" .||. "images/*") $ do
+    match "images/*" $ do
         route idRoute
         compile copyFileCompiler
 
@@ -106,6 +106,23 @@ main = hakyllWith config $ do
 
     match "templates/*" $ compile templateBodyCompiler
 
+    create ["data/distance.json"] $ do
+        route idRoute
+        compile $ do
+            posts <- chronological =<< loadAll "posts/*"
+
+            let elementCtx = mconcat
+                    [ dateField "day" "%Y-%m-%d"
+                    , defaultContext
+                    ]
+
+            let dataCtx = mconcat
+                    [ listField "posts" elementCtx (return posts)
+                    , defaultContext
+                    ]
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/data.json" dataCtx
 
 --------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
