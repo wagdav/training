@@ -23,32 +23,58 @@
 
         <main role="main">
             <h1>Activity log</h1>
-            <div id="missing-y"></div>
+            <div id="distance-this-week"></div>
 
 <script>
-d3.json('data/missing-y.json', function(data) {
+
+function getLastMonday(d) {
+    d = new Date(d);
+    var day = d.getDay(),
+        diff = d.getDate() - day + (day == 0 ? -6 : 1); // adjust when day is sunday
+    return new Date(d.setDate(diff));
+}
+
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+d3.json('data/distance.json', function(data) {
+    var today = new Date().setHours(0, 0, 0);
+    var min_date = getLastMonday(today);
+    var max_date = addDays(min_date, 6);
+
+    const porchHours = 2;
+    min_date = min_date.setHours(min_date.getHours() - porchHours);
+    max_date = max_date.setHours(max_date.getHours() + porchHours);
+
     data = MG.convert.date(data, 'date');
+
     MG.data_graphic({
+        title: 'Distance this week',
+        target: '#distance-this-week',
         data: data,
-        chart_type: 'point',
         full_width: true,
         missing_is_zero: true,
-        target: '#missing-y',
-        size_accessor: 'value',
-        y_accessor: 'y',
-        y_axis: false,
-        size_range: [5, 50],
-        min_x: new Date('2018-10-22'),
-        max_x: new Date('2018-10-28'),
-        target: '#missing-y',
-        mouseover: function(d, i) {
-            var df = d3.timeFormat('%b %d, %Y');
-            var date = df(d.date);
-            var y_val = (d.value === 0) ? 'no data' : d.value;
+        interpolate: d3.curveLinear,
 
-            d3.select('#missing-y svg .mg-active-datapoint')
-                .text(date +  '   ' + y_val);
-        }
+        min_x: min_date,
+        max_x: max_date,
+        markers: [{
+            'date': today,
+            'label': 'today'
+         }],
+
+        x_accessor: 'date',
+        y_accessor: 'distance',
+        yax_units: "km",
+        yax_units_append: true,
+
+        point_size: 3,
+        active_point_on_lines: true,
+        active_point_accessor: 'distance',
+        active_point_size: 3,
     });
 });
 </script>
