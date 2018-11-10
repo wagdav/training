@@ -24,7 +24,7 @@ main = hakyllWith config $ do
         route assets
         compile compressCssCompiler
 
-    match (fromList ["about.markdown", "contact.markdown"]) $ do
+    match (fromList ["about.markdown"]) $ do
         route cleanRoute
         compile
             $   pandocCompiler
