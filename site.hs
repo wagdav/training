@@ -21,11 +21,11 @@ main = hakyllWith config $ do
         compile copyFileCompiler
 
     match (fromList nodeModulesJs) $ do
-        route idRoute
+        route assets
         compile copyFileCompiler
 
     match (fromList nodeModulesCss) $ do
-        route idRoute
+        route assets
         compile compressCssCompiler
 
     match (fromList ["about.markdown", "contact.markdown"]) $ do
@@ -132,6 +132,9 @@ nodeModulesJs =
     , "node_modules/d3/build/d3.min.js"
     ]
 nodeModulesCss = ["node_modules/metrics-graphics/dist/metricsgraphics.css"]
+
+assets :: Routes
+assets = gsubRoute "node_modules" (const "assets")
 
 config :: Configuration
 config = defaultConfiguration { deploySite = deploy }
