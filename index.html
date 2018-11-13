@@ -27,13 +27,6 @@
 
 <script>
 
-function getLastMonday(d) {
-    d = new Date(d);
-    var day = d.getDay(),
-        diff = d.getDate() - day + (day == 0 ? -6 : 1); // adjust when day is sunday
-    return new Date(d.setDate(diff));
-}
-
 function addDays(date, days) {
   var result = new Date(date);
   result.setDate(result.getDate() + days);
@@ -42,8 +35,8 @@ function addDays(date, days) {
 
 d3.json('data/distance.json', function(data) {
     var today = new Date().setHours(0, 0, 0);
-    var min_date = getLastMonday(today);
-    var max_date = addDays(min_date, 6);
+    var min_date = addDays(today, -7);
+    var max_date = new Date(today);
 
     const porchHours = 2;
     min_date = min_date.setHours(min_date.getHours() - porchHours);
@@ -52,7 +45,7 @@ d3.json('data/distance.json', function(data) {
     data = MG.convert.date(data, 'date');
 
     MG.data_graphic({
-        title: 'Distance this week',
+        title: 'Distance in the last 7 days',
         target: '#distance-this-week',
         data: data,
         full_width: true,
@@ -61,10 +54,8 @@ d3.json('data/distance.json', function(data) {
 
         min_x: min_date,
         max_x: max_date,
-        markers: [{
-            'date': today,
-            'label': 'today'
-         }],
+
+        area: false,
 
         x_accessor: 'date',
         y_accessor: 'distance',
@@ -81,6 +72,14 @@ d3.json('data/distance.json', function(data) {
 
 <h2>Recent</h2>
 <ul>
+    
+        <li>
+            <a href="./posts/2018-11-13-Evening-run/">Sauvabelin</a> - November 13, 2018
+        </li>
+    
+        <li>
+            <a href="./posts/2018-11-12-Curling/">Curling</a> - November 12, 2018
+        </li>
     
         <li>
             <a href="./posts/2018-11-11-Nyon-St-Cergue/">Nyon - Chalet de la Dôle - St. Cergue</a> - November 11, 2018
