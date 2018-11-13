@@ -21,8 +21,8 @@ function addDays(date, days) {
 
 d3.json('data/distance.json', function(data) {
     var today = new Date().setHours(0, 0, 0);
-    var min_date = getLastMonday(today);
-    var max_date = addDays(min_date, 6);
+    var min_date = addDays(today, -7);
+    var max_date = new Date(today);
 
     const porchHours = 2;
     min_date = min_date.setHours(min_date.getHours() - porchHours);
@@ -31,7 +31,7 @@ d3.json('data/distance.json', function(data) {
     data = MG.convert.date(data, 'date');
 
     MG.data_graphic({
-        title: 'Distance this week',
+        title: 'Distance in the last 7 days',
         target: '#distance-this-week',
         data: data,
         full_width: true,
