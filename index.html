@@ -33,10 +33,8 @@ d3.json('data/distance.json', function(data) {
 
         min_x: min_date,
         max_x: max_date,
-        markers: [{
-            'date': today,
-            'label': 'today'
-         }],
+
+        area: false,
 
         x_accessor: 'date',
         y_accessor: 'distance',
