@@ -6,13 +6,6 @@ title: Activity log
 
 <script>
 
-function getLastMonday(d) {
-    d = new Date(d);
-    var day = d.getDay(),
-        diff = d.getDate() - day + (day == 0 ? -6 : 1); // adjust when day is sunday
-    return new Date(d.setDate(diff));
-}
-
 function addDays(date, days) {
   var result = new Date(date);
   result.setDate(result.getDate() + days);
