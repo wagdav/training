@@ -9,6 +9,30 @@
         $endif$
     </section>
     <section>
+        $if(trace)$
+            <div id="trace" class=map></div>
+
+            <script>
+                var map = L.map('trace');
+
+                var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+                var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+                var osm = new L.TileLayer(
+                    url,
+                    {
+                        minZoom: 8,
+                        maxZoom: 16,
+                        attribution: attrib
+                    })
+                    .addTo(map);
+
+                var gpxLayer = omnivore.gpx('$trace$')
+                    .on('ready', function() {
+                        map.fitBounds(gpxLayer.getBounds());
+                    })
+                    .addTo(map);
+            </script>
+        $endif$
     </section>
     <section>
         $body$
