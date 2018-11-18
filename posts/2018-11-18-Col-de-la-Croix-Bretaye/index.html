@@ -52,7 +52,7 @@
                     })
                     .addTo(map);
 
-                var gpxLayer = omnivore.gpx('/data/Col_de_la_Croix_Bretaye.gpx')
+                var gpxLayer = omnivore.gpx('/training/data/Col_de_la_Croix_Bretaye.gpx')
                     .on('ready', function() {
                         map.fitBounds(gpxLayer.getBounds());
                     })
