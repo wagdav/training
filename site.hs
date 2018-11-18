@@ -150,8 +150,13 @@ nodeModulesJs =
     [ "node_modules/jquery/dist/jquery.min.js"
     , "node_modules/metrics-graphics/dist/metricsgraphics.min.js"
     , "node_modules/d3/build/d3.min.js"
+    , "node_modules/leaflet/dist/leaflet.js"
+    , "node_modules/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"
     ]
-nodeModulesCss = ["node_modules/metrics-graphics/dist/metricsgraphics.css"]
+nodeModulesCss =
+    [ "node_modules/metrics-graphics/dist/metricsgraphics.css"
+    , "node_modules/leaflet/dist/leaflet.css"
+    ]
 
 assets :: Routes
 assets = gsubRoute "node_modules" (const "assets")

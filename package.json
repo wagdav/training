@@ -1,7 +1,9 @@
 {
   "name": "training.thewagner.net",
   "dependencies": {
+    "@mapbox/leaflet-omnivore": "^0.3.4",
     "jquery": "^3.3.1",
+    "leaflet": "^1.3.4",
     "metrics-graphics": "^2.15.6"
   },
   "private": true
