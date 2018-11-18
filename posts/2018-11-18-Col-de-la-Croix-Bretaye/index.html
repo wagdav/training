@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Wagner Training | Sauvabelin</title>
+        <title>The Wagner Training | Col de la Croix - Bretaye</title>
         <link rel="icon" href="../../images/favicon.png" />
         <link rel="stylesheet" href="../../css/default.css" />
         <link rel="stylesheet" href="../../assets/metrics-graphics/dist/metricsgraphics.css" />
@@ -25,20 +25,43 @@
         </header>
 
         <main role="main">
-            <h1>Sauvabelin</h1>
+            <h1>Col de la Croix - Bretaye</h1>
             <article>
     <section class="header">
-        Posted on November 13, 2018
+        Posted on November 18, 2018
         
-            <a href="../../tags/run.html">run</a>
+            <a href="../../tags/hike.html">hike</a>
         
-        
-    </section>
-    <section>
         
     </section>
     <section>
-        <p>Up to Savuvabelin through the Cité then back by the airport.</p>
+        
+            <div id="trace" class="map"></div>
+
+            <script>
+                var map = L.map('trace');
+
+                var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+                var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+                var osm = new L.TileLayer(
+                    url,
+                    {
+                        minZoom: 8,
+                        maxZoom: 16,
+                        attribution: attrib
+                    })
+                    .addTo(map);
+
+                var gpxLayer = omnivore.gpx('/data/Col_de_la_Croix_Bretaye.gpx')
+                    .on('ready', function() {
+                        map.fitBounds(gpxLayer.getBounds());
+                    })
+                    .addTo(map);
+            </script>
+        
+    </section>
+    <section>
+        <p>Starting from the Col de la Croix up to the Col de Bretaye ski station.</p>
     </section>
 </article>
 
