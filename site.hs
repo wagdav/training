@@ -8,7 +8,7 @@ import           System.Exit
 
 main :: IO ()
 main = hakyllWith config $ do
-    match ("images/*" .||. "data/*") $ do
+    match ("CNAME" .||. "images/*" .||. "data/*") $ do
         route idRoute
         compile copyFileCompiler
 
