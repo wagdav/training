@@ -26,7 +26,7 @@
                     })
                     .addTo(map);
 
-                var gpxLayer = omnivore.gpx('/training$trace$')
+                var gpxLayer = omnivore.gpx('$trace$')
                     .on('ready', function() {
                         map.fitBounds(gpxLayer.getBounds());
                     })
