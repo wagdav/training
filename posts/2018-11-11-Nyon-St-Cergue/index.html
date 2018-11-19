@@ -52,7 +52,7 @@
                     })
                     .addTo(map);
 
-                var gpxLayer = omnivore.gpx('/training/data/Nyon_Chalet_de_la_D_le_St_Cergue.gpx')
+                var gpxLayer = omnivore.gpx('/data/Nyon_Chalet_de_la_D_le_St_Cergue.gpx')
                     .on('ready', function() {
                         map.fitBounds(gpxLayer.getBounds());
                     })
