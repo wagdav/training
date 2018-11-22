@@ -14,6 +14,22 @@
         $endif$
     </section>
     <section>
+        <dl>
+        $if(time)$
+            <dt>Time</dt>
+            <dd>$time$</dd>
+        $endif$
+        $if(distance)$
+            <dt>Distance</dt>
+            <dd>$distance$km</dd>
+        $endif$
+        $if(elevation_gain)$
+            <dt>Elevation gain</dt>
+            <dd>$elevation_gain$</dd>
+        $endif$
+        </dl>
+    </section>
+    <section>
         $body$
     </section>
 </article>
