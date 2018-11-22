@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Wagner Training | Evening run</title>
+        <title>The Wagner Training | Riponne - Chalet-à-Gobet</title>
         <link rel="icon" href="../../images/favicon.png" />
         <link rel="stylesheet" href="../../css/default.css" />
         <link rel="stylesheet" href="../../assets/metrics-graphics/dist/metricsgraphics.css" />
@@ -25,10 +25,10 @@
         </header>
 
         <main role="main">
-            <h1>Evening run</h1>
+            <h1>Riponne - Chalet-à-Gobet</h1>
             <article>
     <section class="header">
-        Posted on November  8, 2018
+        Posted on November 22, 2018
         
             <a href="../../tags/run.html">run</a>
         
@@ -36,22 +36,50 @@
     </section>
     <section>
         
+            <div id="trace" class="map"></div>
+<a href="../../data/2018-11-22_18-40_Thu.gpx">GPX</a>
+
+<script>
+    var map = L.map('trace');
+
+    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(
+        url,
+        {
+            minZoom: 8,
+            maxZoom: 16,
+            attribution: attrib
+        })
+        .addTo(map);
+
+    var gpxLayer = omnivore.gpx('/data/2018-11-22_18-40_Thu.gpx')
+        .on('ready', function() {
+            map.fitBounds(gpxLayer.getBounds());
+        })
+        .addTo(map);
+</script>
+
+        
     </section>
     <section>
         <dl>
         
             <dt>Time</dt>
-            <dd>30m</dd>
+            <dd>1:24:25</dd>
         
         
             <dt>Distance</dt>
-            <dd>5km</dd>
+            <dd>9.21km</dd>
         
+        
+            <dt>Elevation gain</dt>
+            <dd>382m</dd>
         
         </dl>
     </section>
     <section>
-        <p>To the football fields and back on Avenue d’Echallens. Exercises in the park.</p>
+        <p>Evening run from the center of Lausanne to Chalet-à-Gobet.</p>
     </section>
 </article>
 
