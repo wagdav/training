@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Wagner Training | Villeneuve - Col de Chaude - Allières</title>
+        <link rel="icon" href="../../images/favicon.png" />
+        <link rel="stylesheet" href="../../css/default.css" />
+        <link rel="stylesheet" href="../../assets/metrics-graphics/dist/metricsgraphics.css" />
+        <link rel="stylesheet" href="../../assets/leaflet/dist/leaflet.css" />
+        <script src="../../assets/jquery/dist/jquery.min.js"></script>
+        <script src="../../assets/d3/build/d3.min.js"></script>
+        <script src="../../assets/leaflet/dist/leaflet.js"></script>
+        <script src="../../assets/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"></script>
+        <script src="../../assets/metrics-graphics/dist/metricsgraphics.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../../">Home</a>
+                <a href="../../archive">Archive</a>
+                <a href="../../about">About</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Villeneuve - Col de Chaude - Allières</h1>
+            <article>
+    <section class="header">
+        Posted on November 25, 2018
+        
+            <a href="../../tags/run.html">run</a>
+        
+        
+    </section>
+    <section>
+        
+            <div id="trace" class="map"></div>
+<a href="../../data/Villeneuve_Col_de_Chaude_Aillieres.gpx">GPX</a>
+
+<script>
+    var map = L.map('trace');
+
+    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(
+        url,
+        {
+            minZoom: 8,
+            maxZoom: 16,
+            attribution: attrib
+        })
+        .addTo(map);
+
+    var gpxLayer = omnivore.gpx('/data/Villeneuve_Col_de_Chaude_Aillieres.gpx')
+        .on('ready', function() {
+            map.fitBounds(gpxLayer.getBounds());
+        })
+        .addTo(map);
+</script>
+
+        
+    </section>
+    <section>
+        <dl>
+        
+            <dt>Time</dt>
+            <dd>03:07:53</dd>
+        
+        
+            <dt>Distance</dt>
+            <dd>19.85km</dd>
+        
+        
+            <dt>Elevation gain</dt>
+            <dd>1376m</dd>
+        
+        </dl>
+    </section>
+    <section>
+        <p>Long run from canton Vaud to canton Fribourg with a lot of elevation gain.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+            © 2018 David Wagner. All Rights Reserved
+        </footer>
+    </body>
+</html>
