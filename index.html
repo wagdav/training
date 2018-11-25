@@ -37,28 +37,24 @@ function addDays(date, days) {
 }
 
 d3.json('data/distance.json', function(data) {
-    var today = new Date().setHours(0, 0, 0);
-    var min_date = addDays(today, -7);
-    var max_date = new Date(today);
-
-    const porchHours = 2;
-    min_date = min_date.setHours(min_date.getHours() - porchHours);
-    max_date = max_date.setHours(max_date.getHours() + porchHours);
-
     data = MG.convert.date(data, 'date');
+    var totals = new Array();
+    var total_distance = 0;
+    for (i = 0; i < data.length; i++) {
+        total_distance += data[i].distance;
+        console.log(data[i].date, total_distance);
+        totals[i] = {
+            "date": new Date(data[i].date),
+            "distance": total_distance,
+        }
+    }
 
     MG.data_graphic({
         title: 'Distance in the last 7 days',
         target: '#distance-this-week',
-        data: data,
+        data: totals,
         full_width: true,
-        missing_is_zero: true,
         interpolate: d3.curveLinear,
-
-        min_x: min_date,
-        max_x: max_date,
-
-        area: false,
 
         x_accessor: 'date',
         y_accessor: 'distance',
@@ -114,42 +110,6 @@ d3.json('data/distance.json', function(data) {
     
         <li>
             <a href="./posts/2018-11-13-Sauvabelin/">Sauvabelin</a> - November 13, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-12-Curling/">Curling</a> - November 12, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-11-Nyon-St-Cergue/">Nyon - Chalet de la Dôle - St. Cergue</a> - November 11, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-08-Evening-run/">Evening run</a> - November  8, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-07-Sauvabelin/">Sauvabelin</a> - November  7, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-05-Curling/">Curling</a> - November  5, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-03-Merdasson/">Merdasson</a> - November  3, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-10-29-Curling/">Curling</a> - October 29, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-10-07-Morat-Fribourg-2018/">Morat-Fribourg 2018</a> - October  7, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-07-07-Etape-du-Tour/">Etape du Tour 2018</a> - July  7, 2018
         </li>
     
 </ul>
