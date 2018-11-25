@@ -1,9 +1,16 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Hakyll
-import           System.FilePath
+
+import           Control.Monad                  ( filterM )
 import           Data.List                      ( isSuffixOf )
 import qualified System.Process                as Process
 import           System.Exit
+import           System.FilePath
+
+import           Data.Time
+import           Data.Time.Calendar
+import           Data.Time.Calendar.WeekDate
+import           Data.Time.Format               ( defaultTimeLocale )
 
 
 main :: IO ()
@@ -109,7 +116,14 @@ main = hakyllWith config $ do
     create ["data/distance.json"] $ do
         route idRoute
         compile $ do
-            posts <- chronological =<< loadAll "posts/*"
+            all <- loadAll "posts/*"
+            latest <- head <$> recentFirst all
+            ordered <- chronological all
+
+            latest <- getItemUTC defaultTimeLocale $ itemIdentifier latest
+            let startTime = lastMonday latest
+
+            posts <- filterM (laterThan startTime) ordered
 
             let elementCtx = mconcat
                     [ dateField "day" "%Y-%m-%d"
@@ -123,6 +137,11 @@ main = hakyllWith config $ do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/data.json" dataCtx
+
+
+laterThan tRef item = do
+    t <- getItemUTC defaultTimeLocale $ itemIdentifier item
+    return $ (t >= tRef)
 
 --------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
@@ -183,3 +202,9 @@ config = defaultConfiguration { deploySite = deploy }
         case r of
             ExitSuccess -> cmd2
             _           -> return r
+
+lastMonday :: UTCTime -> UTCTime
+lastMonday (UTCTime d diff) = UTCTime (addDays (negate offset) d) diff
+  where
+    offset            = fromIntegral (dayOfWeek - 1)  -- Monday is '1'
+    (_, _, dayOfWeek) = toWeekDate d

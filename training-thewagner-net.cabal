@@ -9,5 +9,6 @@ executable site
                   , hakyll == 4.12.*
                   , filepath
                   , process
+                  , time
   ghc-options:      -threaded
   default-language: Haskell2010
