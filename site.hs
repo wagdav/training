@@ -16,7 +16,7 @@ main = hakyllWith config $ do
         route idRoute
         compile compressCssCompiler
 
-    match (fromList nodeModulesJs) $ do
+    match (fromList nodeModulesJs .||. fromList nodeModulesImages) $ do
         route assets
         compile copyFileCompiler
 
@@ -145,17 +145,22 @@ cleanIndex url | idx `isSuffixOf` url = take (length url - length idx) url
     where idx = "index.html"
 
 
-nodeModulesJs, nodeModulesCss :: [Identifier]
+nodeModulesJs, nodeModulesCss, nodeModulesImages :: [Identifier]
 nodeModulesJs =
     [ "node_modules/jquery/dist/jquery.min.js"
     , "node_modules/metrics-graphics/dist/metricsgraphics.min.js"
     , "node_modules/d3/build/d3.min.js"
     , "node_modules/leaflet/dist/leaflet.js"
+    , "node_modules/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"
     , "node_modules/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"
     ]
 nodeModulesCss =
     [ "node_modules/metrics-graphics/dist/metricsgraphics.css"
     , "node_modules/leaflet/dist/leaflet.css"
+    , "node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css"
+    ]
+nodeModulesImages =
+    [ "node_modules/leaflet-fullscreen/dist/fullscreen.png"
     ]
 
 assets :: Routes
