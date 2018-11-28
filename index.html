@@ -37,24 +37,28 @@ function addDays(date, days) {
 }
 
 d3.json('data/distance.json', function(data) {
+    var today = new Date().setHours(0, 0, 0);
+    var min_date = addDays(today, -7);
+    var max_date = new Date(today);
+
+    const porchHours = 2;
+    min_date = min_date.setHours(min_date.getHours() - porchHours);
+    max_date = max_date.setHours(max_date.getHours() + porchHours);
+
     data = MG.convert.date(data, 'date');
-    var totals = new Array();
-    var total_distance = 0;
-    for (i = 0; i < data.length; i++) {
-        total_distance += data[i].distance;
-        console.log(data[i].date, total_distance);
-        totals[i] = {
-            "date": new Date(data[i].date),
-            "distance": total_distance,
-        }
-    }
 
     MG.data_graphic({
         title: 'Distance in the last 7 days',
         target: '#distance-this-week',
-        data: totals,
+        data: data,
         full_width: true,
+        missing_is_zero: true,
         interpolate: d3.curveLinear,
+
+        min_x: min_date,
+        max_x: max_date,
+
+        area: false,
 
         x_accessor: 'date',
         y_accessor: 'distance',
@@ -71,6 +75,18 @@ d3.json('data/distance.json', function(data) {
 
 <h2>Recent</h2>
 <ul>
+    
+        <li>
+            <a href="./posts/2018-11-28-Sauvabelin/">Sauvabelin</a> - November 28, 2018
+        </li>
+    
+        <li>
+            <a href="./posts/2018-11-27-Short-Pyramides/">Short pyramides</a> - November 27, 2018
+        </li>
+    
+        <li>
+            <a href="./posts/2018-11-26-Curling/">Curling</a> - November 26, 2018
+        </li>
     
         <li>
             <a href="./posts/2018-11-25-Villeneuve-Col-de-Chaud-Allieres/">Villeneuve - Col de Chaude - Allières</a> - November 25, 2018
@@ -98,18 +114,6 @@ d3.json('data/distance.json', function(data) {
     
         <li>
             <a href="./posts/2018-11-18-Col-de-la-Croix-Bretaye/">Col de la Croix - Bretaye</a> - November 18, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-17-Romanel-Le-Mont/">Romanel - Le Mont</a> - November 17, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-15-Lakeside/">Short pyramides</a> - November 15, 2018
-        </li>
-    
-        <li>
-            <a href="./posts/2018-11-13-Sauvabelin/">Sauvabelin</a> - November 13, 2018
         </li>
     
 </ul>
