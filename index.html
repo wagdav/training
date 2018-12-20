@@ -51,6 +51,8 @@ d3.json('data/distance.json', function(data) {
         }
     }
 
+    var max_day = addDays(data[0].date, 7);
+
     MG.data_graphic({
         title: 'Distance in the last 7 days',
         target: '#distance-this-week',
@@ -62,6 +64,8 @@ d3.json('data/distance.json', function(data) {
         y_accessor: 'distance',
         yax_units: "km",
         yax_units_append: true,
+
+        max_x:  max_day,
 
         point_size: 3,
         active_point_on_lines: true,
