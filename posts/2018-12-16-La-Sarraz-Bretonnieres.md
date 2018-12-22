@@ -1,5 +1,5 @@
 ---
-title: La Sarraz - Bretonnières 
+title: La Sarraz - Bretonnières
 tags: hike
 trace: /data/La_Sarraz_to_Bretonni_res.gpx
 ---
