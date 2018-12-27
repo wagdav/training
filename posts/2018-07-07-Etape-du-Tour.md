@@ -27,3 +27,5 @@ Splits
 | COL4START  | 00:16:16   | 06:22:40   | 23.49        |
 | COL4FINISH | 00:41:31   | 07:04:11   | 22.28        |
 | FINISH     | 00:15:54   | 07:20:05   | 23.04        |
+
+Source: [timeto](https://resultscui.active.com/participants/3324834)
