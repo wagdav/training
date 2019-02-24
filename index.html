@@ -7,7 +7,6 @@
         <title>The Wagner Training | Activity log</title>
         <link rel="icon" href="./images/favicon.png" />
         <link rel="stylesheet" href="./css/default.css" />
-        <link rel="stylesheet" href="./assets/metrics-graphics/dist/metricsgraphics.css" />
         <link rel="stylesheet" href="./assets/leaflet/dist/leaflet.css" />
         <link rel="stylesheet" href="./assets/leaflet-fullscreen/dist/leaflet.fullscreen.css" />
         <script src="./assets/jquery/dist/jquery.min.js"></script>
@@ -28,94 +27,68 @@
 
         <main role="main">
             <h1>Activity log</h1>
-            <div id="distance-this-week"></div>
-
-<script>
-
-function addDays(date, days) {
-  var result = new Date(date);
-  result.setDate(result.getDate() + days);
-  return result;
-}
-
-d3.json('data/distance.json', function(data) {
-    data = MG.convert.date(data, 'date');
-    var totals = new Array();
-    var total_distance = 0;
-    for (i = 0; i < data.length; i++) {
-        total_distance += data[i].distance;
-        console.log(data[i].date, total_distance);
-        totals[i] = {
-            "date": new Date(data[i].date),
-            "distance": total_distance,
-        }
-    }
-
-    var max_day = addDays(data[0].date, 7);
-
-    MG.data_graphic({
-        title: 'Distance in the last 7 days',
-        target: '#distance-this-week',
-        data: totals,
-        full_width: true,
-        interpolate: d3.curveLinear,
-
-        x_accessor: 'date',
-        y_accessor: 'distance',
-        yax_units: "km",
-        yax_units_append: true,
-
-        max_x:  max_day,
-
-        point_size: 3,
-        active_point_on_lines: true,
-        active_point_accessor: 'distance',
-        active_point_size: 3,
-    });
-});
-</script>
-
-<h2>Recent</h2>
-<ul>
+            <ul>
     
         <li>
-            <a href="./posts/2018-12-31-Obernai-Sainte-Odile/">Obernai-Mont Sainte-Odlie</a> - December 31, 2018
+            <a href="./posts/2018-12-31-Obernai-Sainte-Odile/">Obernai-Mont Sainte-Odlie</a>
+             - December 31, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-30-Hike-around-Obernai/">Hike around Obernai</a> - December 30, 2018
+            <a href="./posts/2018-12-30-Hike-around-Obernai/">Hike around Obernai</a>
+             - December 30, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-28-Sauvabelin/">Sauvabelin</a> - December 28, 2018
+            <a href="./posts/2018-12-28-Sauvabelin/">Sauvabelin</a>
+            
+                (8km)
+             - December 28, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-20-Sauvabelin/">Sauvabelin</a> - December 20, 2018
+            <a href="./posts/2018-12-20-Sauvabelin/">Sauvabelin</a>
+            
+                (7.9km)
+             - December 20, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-18-Pyramides/">Pyramides</a> - December 18, 2018
+            <a href="./posts/2018-12-18-Pyramides/">Pyramides</a>
+            
+                (8.5km)
+             - December 18, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-16-La-Sarraz-Bretonnieres/">La Sarraz - Bretonnières</a> - December 16, 2018
+            <a href="./posts/2018-12-16-La-Sarraz-Bretonnieres/">La Sarraz - Bretonnières</a>
+             - December 16, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-15-Short-run/">Short run</a> - December 15, 2018
+            <a href="./posts/2018-12-15-Short-run/">Short run</a>
+            
+                (5.22km)
+             - December 15, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-11-Short-run/">Short run</a> - December 11, 2018
+            <a href="./posts/2018-12-11-Short-run/">Short run</a>
+            
+                (5.48km)
+             - December 11, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-10-Curling/">Curling</a> - December 10, 2018
+            <a href="./posts/2018-12-10-Curling/">Curling</a>
+             - December 10, 2018
         </li>
     
         <li>
-            <a href="./posts/2018-12-08-Trail-des-Chateux/">Trail des Chateaux 2018</a> - December  8, 2018
+            <a href="./posts/2018-12-08-Trail-des-Chateux/">Trail des Chateaux 2018</a>
+            
+                (28km)
+             - December  8, 2018
         </li>
     
 </ul>
