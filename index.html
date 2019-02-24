@@ -2,54 +2,6 @@
 title: Activity log
 ---
 
-<div id="distance-this-week"></div>
-
-<script>
-
-function addDays(date, days) {
-  var result = new Date(date);
-  result.setDate(result.getDate() + days);
-  return result;
-}
-
-d3.json('data/distance.json', function(data) {
-    data = MG.convert.date(data, 'date');
-    var totals = new Array();
-    var total_distance = 0;
-    for (i = 0; i < data.length; i++) {
-        total_distance += data[i].distance;
-        console.log(data[i].date, total_distance);
-        totals[i] = {
-            "date": new Date(data[i].date),
-            "distance": total_distance,
-        }
-    }
-
-    var max_day = addDays(data[0].date, 7);
-
-    MG.data_graphic({
-        title: 'Distance in the last 7 days',
-        target: '#distance-this-week',
-        data: totals,
-        full_width: true,
-        interpolate: d3.curveLinear,
-
-        x_accessor: 'date',
-        y_accessor: 'distance',
-        yax_units: "km",
-        yax_units_append: true,
-
-        max_x:  max_day,
-
-        point_size: 3,
-        active_point_on_lines: true,
-        active_point_accessor: 'distance',
-        active_point_size: 3,
-    });
-});
-</script>
-
-<h2>Recent</h2>
 $partial("templates/post-list.html")$
 
 <p>…or you can find more in the <a href="/archive">archives</a>.</p>
