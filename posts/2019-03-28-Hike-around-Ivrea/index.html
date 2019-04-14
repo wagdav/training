@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Wagner Training | Lakes around Ivrea</title>
+        <link rel="icon" href="../../images/favicon.png" />
+        <link rel="stylesheet" href="../../css/default.css" />
+        <link rel="stylesheet" href="../../assets/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="../../assets/leaflet-fullscreen/dist/leaflet.fullscreen.css" />
+        <script src="../../assets/jquery/dist/jquery.min.js"></script>
+        <script src="../../assets/d3/build/d3.min.js"></script>
+        <script src="../../assets/leaflet/dist/leaflet.js"></script>
+        <script src="../../assets/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+        <script src="../../assets/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"></script>
+        <script src="../../assets/metrics-graphics/dist/metricsgraphics.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../../">Home</a>
+                <a href="../../archive">Archive</a>
+                <a href="../../about">About</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Lakes around Ivrea</h1>
+            <article>
+    <section class="header">
+        Posted on March 28, 2019
+        
+            <a href="../../tags/hike.html">hike</a>
+        
+        
+    </section>
+    <section>
+        
+            <div id="trace" class="map"></div>
+<a href="../../data/2019-03-28_11-55_Thu.gpx">GPX</a>
+
+<script>
+    var map = L.map('trace');
+
+    map.addControl(new L.Control.Fullscreen({
+        pseudoFullscreen: true
+    }));
+
+    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(
+        url,
+        {
+            minZoom: 8,
+            maxZoom: 16,
+            attribution: attrib
+        })
+        .addTo(map);
+
+    var gpxLayer = omnivore.gpx('/data/2019-03-28_11-55_Thu.gpx')
+        .on('ready', function() {
+            map.fitBounds(gpxLayer.getBounds());
+        })
+        .addTo(map);
+</script>
+
+        
+    </section>
+    <section>
+        <dl>
+        
+        
+        
+        </dl>
+    </section>
+    <section>
+        <p>Short hike around Lago Pistono and Lago Nero near Ivrea, Italy.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+            © 2018-2019 David Wagner. All Rights Reserved
+        </footer>
+    </body>
+</html>
