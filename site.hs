@@ -38,7 +38,7 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    match (fromList ["about.md"]) $ do
+    match (fromList ["about.md", "events.md"]) $ do
         route cleanRoute
         compile
             $   pandocCompiler
