@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Hakyll
 
+import           Control.Exception
 import           Control.Monad                  ( filterM )
 import           Data.List                      ( isSuffixOf )
 import qualified System.Process                as Process
@@ -189,19 +190,20 @@ config :: Configuration
 config = defaultConfiguration { deploySite = deploy }
   where
     deploy :: Configuration -> IO ExitCode
-    deploy _ = run "yarn" ["install"]
-            && run "stack" ["exec", "site", "rebuild"]
-            && run "ghp-import" ["_site", "-m", "Automatic update"]
-            && run "git" ["push", "origin", "gh-pages"]
+    deploy _ = do
+        e <- try $ do
+          run "yarn" ["install"]
+          run "stack" ["exec", "site", "rebuild"]
+          run "ghp-import" ["_site", "-m", "Automatic update"]
+          run "git" ["push", "origin", "gh-pages"]
+        case e of
+          Right () -> return ExitSuccess
+          Left (SomeException error) -> do
+            putStrLn $ "OUPS, something went wrong:"
+            putStrLn $ show error
+            return $ ExitFailure 1
 
-    run = Process.rawSystem
-
-    (&&) :: Monad m => m ExitCode -> m ExitCode -> m ExitCode
-    cmd1 && cmd2 = do
-        r <- cmd1
-        case r of
-            ExitSuccess -> cmd2
-            _           -> return r
+    run = Process.callProcess
 
 lastMonday :: UTCTime -> UTCTime
 lastMonday (UTCTime d diff) = UTCTime (addDays (negate offset) d) diff
