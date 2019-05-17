@@ -97,24 +97,6 @@ main =
           relativizeUrls >>=
           cleanIndexUrls
     match "templates/*" $ compile templateBodyCompiler
-    create ["data/distance.json"] $ do
-      route idRoute
-      compile $ do
-        all <- loadAll "posts/*"
-        latest <- head <$> recentFirst all
-        ordered <- chronological all
-        latest <- getItemUTC defaultTimeLocale $ itemIdentifier latest
-        let startTime = lastMonday latest
-        posts <- filterM (laterThan startTime) ordered
-        let elementCtx = mconcat [dateField "day" "%Y-%m-%d", defaultContext]
-        let dataCtx =
-              mconcat
-                [listField "posts" elementCtx (return posts), defaultContext]
-        makeItem "" >>= loadAndApplyTemplate "templates/data.json" dataCtx
-
-laterThan tRef item = do
-  t <- getItemUTC defaultTimeLocale $ itemIdentifier item
-  return $ (t >= tRef)
 
 --------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
@@ -140,10 +122,7 @@ cleanIndex url
 
 nodeModulesJs, nodeModulesCss, nodeModulesImages :: [Identifier]
 nodeModulesJs =
-  [ "node_modules/jquery/dist/jquery.min.js"
-  , "node_modules/metrics-graphics/dist/metricsgraphics.min.js"
-  , "node_modules/d3/build/d3.min.js"
-  , "node_modules/leaflet/dist/leaflet.js"
+  [ "node_modules/leaflet/dist/leaflet.js"
   , "node_modules/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"
   , "node_modules/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"
   ]
@@ -177,9 +156,3 @@ config = defaultConfiguration {deploySite = deploy}
           putStrLn $ show error
           return $ ExitFailure 1
     run = Process.callProcess
-
-lastMonday :: UTCTime -> UTCTime
-lastMonday (UTCTime d diff) = UTCTime (addDays (negate offset) d) diff
-  where
-    offset = fromIntegral (dayOfWeek - 1) -- Monday is '1'
-    (_, _, dayOfWeek) = toWeekDate d

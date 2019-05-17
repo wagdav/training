@@ -1,6 +1,0 @@
-[
-  $for(posts)$ {
-    "date": "$day$",
-    "distance": $if(distance)$ $distance$ $else$ 0 $endif$
-  }$sep$,$endfor$
-]
