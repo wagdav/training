@@ -17,7 +17,7 @@ import Data.Time.Format (defaultTimeLocale)
 main :: IO ()
 main =
   hakyllWith config $ do
-    match ("CNAME" .||. "images/*" .||. "data/*") $ do
+    match ("CNAME" .||. "images/*" .||. "images/rdga/*" .||. "data/*") $ do
       route idRoute
       compile copyFileCompiler
     match "css/*" $ do
