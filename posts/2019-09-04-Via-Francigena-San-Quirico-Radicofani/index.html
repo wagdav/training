@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Wagner Training | Via Francigena - from San Quirico d'Orcia to Radicofani</title>
+        <link rel="icon" href="../../images/favicon.png" />
+        <link rel="stylesheet" href="../../css/default.css" />
+        <link rel="stylesheet" href="../../assets/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="../../assets/leaflet-fullscreen/dist/leaflet.fullscreen.css" />
+        <script src="../../assets/leaflet/dist/leaflet.js"></script>
+        <script src="../../assets/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+        <script src="../../assets/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../../">Home</a>
+                <a href="../../events">Events</a>
+                <a href="../../archive">Archive</a>
+                <a href="../../about">About</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Via Francigena - from San Quirico d'Orcia to Radicofani</h1>
+            <article>
+    <section class="header">
+        Posted on September  4, 2019
+        
+            <a href="../../tags/hike.html">hike</a>, <a href="../../tags/tuscany2019.html">tuscany2019</a>
+        
+        
+    </section>
+    <section>
+        
+            <div id="trace" class="map"></div>
+<a href="../../data/2019-09-04_08-14_Wed.gpx">GPX</a>
+
+<script>
+    var map = L.map('trace');
+
+    map.addControl(new L.Control.Fullscreen({
+        pseudoFullscreen: true
+    }));
+
+    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(
+        url,
+        {
+            minZoom: 8,
+            maxZoom: 16,
+            attribution: attrib
+        })
+        .addTo(map);
+
+    var gpxLayer = omnivore.gpx('/data/2019-09-04_08-14_Wed.gpx')
+        .on('ready', function() {
+            map.fitBounds(gpxLayer.getBounds());
+        })
+        .addTo(map);
+</script>
+
+        
+    </section>
+    <section>
+        <dl>
+        
+        
+            <dt>Distance</dt>
+            <dd>34km</dd>
+        
+        
+        </dl>
+    </section>
+    <section>
+        <p>The <a href="https://www.viefrancigene.org/en/resource/statictrack/tappa-36-da-san-quirico-radicofani/">36th leg of the Via Francigena part in Italy</a>. It’s a long, strenuous walk through the Tuscan countryside. Sometimes the walking path is rather close to the main road.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+            © 2018-2019 David Wagner. All Rights Reserved
+        </footer>
+    </body>
+</html>
