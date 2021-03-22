@@ -1,5 +1,6 @@
 {
-  "name": "training.thewagner.net",
+  "name": "training-thewagner-net",
+  "version": "1.0.0",
   "dependencies": {
     "@mapbox/leaflet-omnivore": "^0.3.4",
     "leaflet": "^1.3.4",
