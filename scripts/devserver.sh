@@ -2,7 +2,7 @@
 #! nix-shell ../shell.nix -i bash
 PORT=8000
 
-yarn install
+yarn install --modules-folder output/node_modules
 
 pelican \
   --output output \
