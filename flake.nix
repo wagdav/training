@@ -34,7 +34,6 @@
       packages."${system}" = {
         training-thewagner-net = pkgs.runCommand "pelican"
           {
-            preferLocalBuild = true;
             buildInputs = [ pythonEnv ];
           }
           ''
