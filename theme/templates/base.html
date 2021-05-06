@@ -10,12 +10,11 @@
   <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
 
   <link rel="icon" href="/images/favicon.png" />
-  <link rel="stylesheet" href="/theme/css/main.css" />
-  <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="/node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css" />
-  <script src="/node_modules/leaflet/dist/leaflet.js"></script>
-  <script src="/node_modules/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
-  <script src="/node_modules/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"></script>
+  <link rel="stylesheet" href="{{ SITEURL }}/node_modules/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css" />
+  <script src="{{ SITEURL }}/node_modules/leaflet/dist/leaflet.js"></script>
+  <script src="{{ SITEURL }}/node_modules/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+  <script src="{{ SITEURL }}/node_modules/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"></script>
 
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
