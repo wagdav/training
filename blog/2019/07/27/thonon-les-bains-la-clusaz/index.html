@@ -10,11 +10,6 @@
   <link rel="stylesheet" type="text/css" href="https://training.thewagner.net/theme/css/main.css">
 
   <link rel="icon" href="/images/favicon.png">
-  <link rel="stylesheet" type="text/css" href="https://training.thewagner.net/node_modules/leaflet/dist/leaflet.css">
-  <link rel="stylesheet" type="text/css" href="https://training.thewagner.net/node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css">
-  <script type="text/javascript" src="https://training.thewagner.net/node_modules/leaflet/dist/leaflet.js"></script>
-  <script type="text/javascript" src="https://training.thewagner.net/node_modules/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
-  <script type="text/javascript" src="https://training.thewagner.net/node_modules/@mapbox/leaflet-omnivore/leaflet-omnivore.min.js"></script>
 
   <link href="https://training.thewagner.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Activities Atom Feed" />
 
@@ -50,32 +45,8 @@
 
   <div>
 <div id="trace" style="height: 400px;"></div>
-<a href="/data/rdga2019-1.gpx">GPX</a>
-
-<script>
-    var map = L.map('trace');
-
-    map.addControl(new L.Control.Fullscreen({
-        pseudoFullscreen: true
-    }));
-
-    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
-    var osm = new L.TileLayer(
-        url,
-        {
-            minZoom: 8,
-            maxZoom: 16,
-            attribution: attrib
-        })
-        .addTo(map);
-
-    var gpxLayer = omnivore.gpx('/data/rdga2019-1.gpx')
-        .on('ready', function() {
-            map.fitBounds(gpxLayer.getBounds());
-        })
-        .addTo(map);
-</script>  </div>
+<a id="gpx" href="/data/rdga2019-1.gpx">GPX</a>
+<script type="text/javascript" src="https://training.thewagner.net/theme/dist/main.js"></script>  </div>
 
   <div>
       <dt>Distance</dt>
