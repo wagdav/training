@@ -1,5 +1,5 @@
 import L from 'leaflet';
-import omnivore from '@mapbox/leaflet-omnivore';
+import 'leaflet-gpx';
 import 'leaflet-fullscreen';
 
 import 'leaflet/dist/leaflet.css';
@@ -23,8 +23,7 @@ var osm = new L.TileLayer(
     .addTo(map);
 
 var href = document.getElementById("gpx").href;
-var gpxLayer = omnivore.gpx(href)
-    .on('ready', function() {
-        map.fitBounds(gpxLayer.getBounds());
-    })
-    .addTo(map);
+new L.GPX(href, {async: true}).on('loaded', function(e) {
+    map.fitBounds(e.target.getBounds());
+})
+.addTo(map);

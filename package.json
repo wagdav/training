@@ -2,9 +2,9 @@
   "name": "training-thewagner-net",
   "version": "1.0.0",
   "dependencies": {
-    "@mapbox/leaflet-omnivore": "*",
     "leaflet": "*",
-    "leaflet-fullscreen": "*"
+    "leaflet-fullscreen": "*",
+    "leaflet-gpx": "*"
   },
   "devDependencies": {
     "css-loader": "*",
