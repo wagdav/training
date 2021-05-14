@@ -6,5 +6,12 @@
     "leaflet": "*",
     "leaflet-fullscreen": "*"
   },
+  "devDependencies": {
+    "css-loader": "*",
+    "file-loader": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
+  },
   "private": true
 }

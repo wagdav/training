@@ -3,6 +3,7 @@
 PORT=8000
 
 yarn install --modules-folder output/node_modules
+yarn webpack
 
 pelican \
   --output output \

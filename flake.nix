@@ -26,31 +26,32 @@
     rec {
 
       devShell."${system}" = pkgs.mkShell {
-        buildInputs = [ pkgs.yarn pythonEnv pkgs.ghp-import];
+        buildInputs = [ pkgs.yarn pythonEnv pkgs.ghp-import ];
       };
 
       defaultPackage."${system}" = packages."${system}".training-thewagner-net;
 
       packages."${system}" = {
-        training-thewagner-net = pkgs.runCommand "pelican"
-          {
-            buildInputs = [ pythonEnv ];
-          }
-          ''
-            ln --symbolic ${./theme} theme
-            ln --symbolic ${./pelicanconf.py} pelicanconf.py
-            ln --symbolic ${./publishconf.py} publishconf.py
+        training-thewagner-net = pkgs.stdenv.mkDerivation {
+          name = "training-thewagner-net-${self.shortRev or "dirty"}";
 
+          buildInputs = [ pythonEnv pkgs.yarn ];
+
+          src = self;
+
+          buildPhase = ''
+            cp -r ${yarnEnv}/node_modules .
+            yarn --offline run webpack
+          '';
+
+          installPhase = ''
             pelican \
               --fatal warnings \
               --settings publishconf.py \
               --output $out \
               ${./content}
-
-            cp -r ${yarnEnv}/node_modules $out/
-
-            mkdir -p $out/deps/training-thewagner-net
           '';
+        };
       };
 
       checks."${system}" = {

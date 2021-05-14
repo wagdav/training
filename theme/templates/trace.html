@@ -1,27 +1,3 @@
 <div id="trace" style="height: 400px;"></div>
-<a href="{{ article.trace}}">GPX</a>
-
-<script>
-    var map = L.map('trace');
-
-    map.addControl(new L.Control.Fullscreen({
-        pseudoFullscreen: true
-    }));
-
-    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var attrib ='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
-    var osm = new L.TileLayer(
-        url,
-        {
-            minZoom: 8,
-            maxZoom: 16,
-            attribution: attrib
-        })
-        .addTo(map);
-
-    var gpxLayer = omnivore.gpx('{{ article.trace }}')
-        .on('ready', function() {
-            map.fitBounds(gpxLayer.getBounds());
-        })
-        .addTo(map);
-</script>
+<a id="gpx" href="{{ article.trace}}">GPX</a>
+<script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/dist/main.js"></script>
