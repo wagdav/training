@@ -2,8 +2,8 @@
 #! nix-shell ../shell.nix -i bash
 PORT=8000
 
-yarn install --modules-folder output/node_modules
-yarn webpack
+yarn install
+yarn run webpack
 
 pelican \
   --output output \
