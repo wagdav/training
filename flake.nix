@@ -35,7 +35,7 @@
         training-thewagner-net = pkgs.stdenv.mkDerivation {
           name = "training-thewagner-net-${self.shortRev or "dirty"}";
 
-          buildInputs = [ pythonEnv pkgs.yarn ];
+          nativeBuildInputs = [ pythonEnv pkgs.yarn ];
 
           src = self;
 
