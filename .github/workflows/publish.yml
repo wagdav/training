@@ -16,4 +16,4 @@ jobs:
       - run: nix-build -A checks.x86_64-linux
       - run: |
           scripts/publish.sh
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
