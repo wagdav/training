@@ -10,6 +10,7 @@ April-May
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2020 |          |         |              | cancelled       |
 | 2019 | 20 km    | 1:26.19 | 4.18 min/km  |                 |
 | 2018 | 20 km    | 1:25.33 | 4.16 min/km  | PB, see note 1. |
 | 2017 | 20 km    | 1:29.49 | 4.27 min/km  |                 |
@@ -32,6 +33,7 @@ October
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2020 |          |         |              | cancelled       |
 | 2019 | 17.17 km | 1:16.13 | 4.26 min/km  |                 |
 | 2018 | 17.17 km | 1:15.33 | 4.24 min/km  | PB              |
 | 2017 | 17.17 km | 1:17.13 | 4.29 min/km  |                 |
@@ -50,6 +52,7 @@ End of October
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2020 |          |         |              | cancelled       |
 | 2019 | 21.1 km  | 1:31.05 | 4.16 min/km  |                 |
 | 2018 | 21.1 km  | 1:29.00 | 4.13 min/km  | PB              |
 | 2017 | 21.1 km  | 1:29.34 | 4.14 min/km  |                 |
