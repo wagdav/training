@@ -4,7 +4,7 @@ title: About
 
 This is a log of my activities, mostly running, cycling and hiking.
 
-The site is created with [Hakyll](https://jaspervdj.be/hakyll/) using the
+The site is created with [Pelican](https://getpelican.com) using the
 following assets:
 
 * the CSS based on [this site](http://bettermotherfuckingwebsite.com/)
