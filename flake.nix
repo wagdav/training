@@ -41,7 +41,10 @@
 
           buildPhase = ''
             cp -r ${yarnEnv}/node_modules .
-            yarn --offline run webpack
+            yarn \
+              --non-interactive \
+              --offline \
+              run webpack
           '';
 
           installPhase = ''
