@@ -3,6 +3,6 @@
 
 set -eu
 
-nix-build
-ghp-import -m "Automatic update" ./result
-git push origin gh-pages
+SITE=$(nix-build --no-out-link -A packages.x86_64-linux.site)
+ghp-import -m "Automatic update" "$SITE"
+git push --force origin gh-pages:gh-pages

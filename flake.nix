@@ -29,10 +29,10 @@
         buildInputs = [ pkgs.yarn pythonEnv pkgs.ghp-import ];
       };
 
-      defaultPackage."${system}" = packages."${system}".training-thewagner-net;
+      defaultPackage."${system}" = packages."${system}".site;
 
       packages."${system}" = {
-        training-thewagner-net = pkgs.stdenv.mkDerivation {
+        site = pkgs.stdenv.mkDerivation {
           name = "training-thewagner-net-${self.shortRev or "dirty"}";
 
           nativeBuildInputs = [ pythonEnv pkgs.yarn ];
@@ -55,9 +55,6 @@
       };
 
       checks."${system}" = {
-
-        build = self.defaultPackage."${system}";
-
         shellcheck = pkgs.runCommand "shellcheck"
           {
             buildInputs = with pkgs; [ shellcheck ];
