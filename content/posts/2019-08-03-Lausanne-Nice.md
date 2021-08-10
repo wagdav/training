@@ -7,13 +7,13 @@ Cycling from Lausanne to Nice in eight days.
 
 # Prologue: Lausanne - Thonon-les-Bains
 
+Distance: 75km
+
 <div
   class="gpx-trace"
   style="height: 400px;"
   data-gpx-trace="/data/rdga2019-0.gpx">
 </div>
-
-[Details]({filename}2019-07-26-Route-des-Grandes-Alpes-Etape-0.md)
 
 # Etape 1: Thonon-les-Bains - La Clusaz
 
@@ -23,7 +23,7 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-1.gpx">
 </div>
 
-[Details]({filename}2019-07-27-Route-des-Grandes-Alpes-Etape-1.md)
+<img src="/images/rdga/etape-1.png" width="100%">
 
 # Etape 2: La Clusaz - Bourg-Saint-Maurice
 
@@ -33,7 +33,7 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-2.gpx">
 </div>
 
-[Details]({filename}2019-07-28-Route-des-Grandes-Alpes-Etape-2.md)
+<img src="/images/rdga/etape-2.png" width="100%">
 
 # Etape 3: Bourg Saint Maurice - Saint-Jean-de-Maurienne
 
@@ -43,7 +43,7 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-3.gpx">
 </div>
 
-[Details]({filename}2019-07-29-Route-des-Grandes-Alpes-Etape-3.md)
+<img src="/images/rdga/etape-3.png" width="100%">
 
 # Etape 4: Saint Jean de Maurienne - Briançon
 
@@ -53,7 +53,7 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-4.gpx">
 </div>
 
-[Details]({filename}2019-07-30-Route-des-Grandes-Alpes-Etape-4.md)
+<img src="/images/rdga/etape-4.png" width="100%">
 
 # Etape 5: Briançon - Jausier
 
@@ -63,7 +63,7 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-5.gpx">
 </div>
 
-[Details]({filename}2019-07-31-Route-des-Grandes-Alpes-Etape-5.md)
+<img src="/images/rdga/etape-5.png" width="100%">
 
 # Etape 6: Jausier - Valdeblore
 
@@ -73,7 +73,7 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-6.gpx">
 </div>
 
-[Details]({filename}2019-08-01-Route-des-Grandes-Alpes-Etape-6.md)
+<img src="/images/rdga/etape-6.png" width="100%">
 
 # Etape 7: Valdeblore - Villefranche-sur-Mer
 
@@ -83,4 +83,4 @@ Cycling from Lausanne to Nice in eight days.
   data-gpx-trace="/data/rdga2019-7.gpx">
 </div>
 
-[Details]({filename}2019-08-02-Route-des-Grandes-Alpes-Etape-6.md)
+<img src="/images/rdga/etape-7.png" width="100%">
