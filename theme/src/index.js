@@ -16,7 +16,7 @@ function addTrace(element) {
         pseudoFullscreen: true
     }));
 
-    var url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var url = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
     var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
     var osm = new L.TileLayer(url, {
             minZoom: 8,
