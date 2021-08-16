@@ -1,5 +1,5 @@
 ---
-title: Via Idra
+title: Via Alpina
 ---
 
 # Day 1
