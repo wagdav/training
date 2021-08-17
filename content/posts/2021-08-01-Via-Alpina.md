@@ -63,5 +63,5 @@ title: Via Alpina
 <div
   class="gpx-trace"
   style="height: 400px;"
-  data-gpx-trace="/data/activity_7223372594.gpx">
+  data-gpx-trace="/data/activity_7222372594.gpx">
 </div>
