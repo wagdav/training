@@ -10,6 +10,7 @@ April-May
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2021 | 18.7 km  | 1:21.39 | 4:23 min/km  | see note 2.     |
 | 2020 |          |         |              | cancelled       |
 | 2019 | 20 km    | 1:26.19 | 4:18 min/km  |                 |
 | 2018 | 20 km    | 1:25.33 | 4:16 min/km  | PB, see note 1. |
@@ -25,6 +26,7 @@ April-May
 ### Notes
 
 1. In 2018 the race was changed, it became 400m longer.
+1. In 2021 a new route was traced on the lakside.
 
 
 ## Morat - Fribourg
