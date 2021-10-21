@@ -35,6 +35,7 @@ October
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2021 | -        |         |              |                 |
 | 2020 |          |         |              | cancelled       |
 | 2019 | 17.17 km | 1:16.13 | 4:26 min/km  |                 |
 | 2018 | 17.17 km | 1:15.33 | 4:24 min/km  | PB              |
@@ -54,6 +55,7 @@ End of October
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2021 | -        |         |              | virtual event   |
 | 2020 |          |         |              | cancelled       |
 | 2019 | 21.1 km  | 1:31.05 | 4:16 min/km  |                 |
 | 2018 | 21.1 km  | 1:29.00 | 4:13 min/km  | PB              |
