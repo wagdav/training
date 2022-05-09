@@ -4,6 +4,26 @@ title: Events
 
 Results of my favorite race events.
 
+## [Les Traîne-Savates](https://www.traine-savates.ch/)
+
+April
+
+| Year | Distance | Time    | Average pace | Comment         |
+| ---- | -------- | ------- | ------------ | --------------- |
+| 2022 | 10.3 km  | 41.18   | PB           |                 |
+| 2021 |          |         |              |                 |
+| 2020 |          |         |              |                 |
+| 2019 | 10.3 km  | 42.41   |              |                 |
+| 2018 | 10.3 km  | 41.35   |              |                 |
+| 2017 | 10.3 km  | 43.22   |              |                 |
+| 2016 |          |         |              |                 |
+| 2015 |          |         |              |                 |
+| 2014 | 10.3 km  | 42.26   |              |                 |
+| 2013 |          |         |              |                 |
+| 2012 |          |         |              |                 |
+| 2011 | 10.3 km  | 42.22   |              |                 |
+| 2010 | 10.3 km  | 42.52   |              |                 |
+
 ## 20 km de Lausanne
 
 April-May
