@@ -56,6 +56,7 @@ October
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2022 | 17.17 km | 1:20.02 | 4:39 min/km  |                 |
 | 2021 | -        |         |              |                 |
 | 2020 |          |         |              | cancelled       |
 | 2019 | 17.17 km | 1:16.13 | 4:26 min/km  |                 |
