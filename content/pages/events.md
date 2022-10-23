@@ -77,8 +77,9 @@ End of October
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2022 | 21.1 km  | 1:33:58 | 4:26 min/km  | new route       |
 | 2021 | -        |         |              | virtual event   |
-| 2020 |          |         |              | cancelled       |
+| 2020 | -        |         |              | cancelled       |
 | 2019 | 21.1 km  | 1:31.05 | 4:16 min/km  |                 |
 | 2018 | 21.1 km  | 1:29.00 | 4:13 min/km  | PB              |
 | 2017 | 21.1 km  | 1:29.34 | 4:14 min/km  |                 |
