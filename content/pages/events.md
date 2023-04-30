@@ -31,6 +31,7 @@ April-May
 
 | Year | Distance | Time    | Average pace | Comment         |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2023 | 20 km    | 1:25.34 | 4:19 min/km  |                 |
 | 2022 | 20 km    | 1:26.96 | 4:21 min/km  |                 |
 | 2021 | 18.7 km  | 1:21.39 | 4:23 min/km  | see note 2.     |
 | 2020 |          |         |              | cancelled       |
