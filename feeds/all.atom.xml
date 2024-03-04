@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Activities</title><link href="https://training.thewagner.net/" rel="alternate"></link><link href="https://training.thewagner.net/feeds/all.atom.xml" rel="self"></link><id>https://training.thewagner.net/</id><updated>2024-03-03T00:00:00+01:00</updated><entry><title>10km de Payerne 2024</title><link href="https://training.thewagner.net/blog/2024/03/03/10km-de-payerne-2024/" rel="alternate"></link><published>2024-03-03T00:00:00+01:00</published><updated>2024-03-03T00:00:00+01:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2024-03-03:/blog/2024/03/03/10km-de-payerne-2024/</id><content type="html">&lt;h2&gt;Legs&lt;/h2&gt;
-&lt;p&gt;| Leg    | Time    | Pace (min/km) | Overall ranking | Gender ranking | Age group |
-| 1. lap | 19:16,6 | 3:51 min/km   | 363             | 317            | 46        |
-| 2. lap | 19:31,1 | 3:54 min/km   | 345             | 298            | 39        |
-| Total  | 38:47,7 | 3:52 min/km   | 346             | 299            | 40        |&lt;/p&gt;</content><category term="posts"></category><category term="race"></category><category term="running"></category></entry><entry><title>Via Idra</title><link href="https://training.thewagner.net/blog/2021/08/15/via-idra/" rel="alternate"></link><published>2021-08-15T00:00:00+02:00</published><updated>2021-08-15T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2021-08-15:/blog/2021/08/15/via-idra/</id><content type="html">&lt;h1&gt;Day 1&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Leg&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;th&gt;Pace (min/km)&lt;/th&gt;
+&lt;th&gt;Overall ranking&lt;/th&gt;
+&lt;th&gt;Gender ranking&lt;/th&gt;
+&lt;th&gt;Age group&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1. lap&lt;/td&gt;
+&lt;td&gt;19:16,6&lt;/td&gt;
+&lt;td&gt;3:51 min/km&lt;/td&gt;
+&lt;td&gt;363&lt;/td&gt;
+&lt;td&gt;317&lt;/td&gt;
+&lt;td&gt;46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2. lap&lt;/td&gt;
+&lt;td&gt;19:31,1&lt;/td&gt;
+&lt;td&gt;3:54 min/km&lt;/td&gt;
+&lt;td&gt;345&lt;/td&gt;
+&lt;td&gt;298&lt;/td&gt;
+&lt;td&gt;39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;38:47,7&lt;/td&gt;
+&lt;td&gt;3:52 min/km&lt;/td&gt;
+&lt;td&gt;346&lt;/td&gt;
+&lt;td&gt;299&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content><category term="posts"></category><category term="race"></category><category term="running"></category></entry><entry><title>Via Idra</title><link href="https://training.thewagner.net/blog/2021/08/15/via-idra/" rel="alternate"></link><published>2021-08-15T00:00:00+02:00</published><updated>2021-08-15T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2021-08-15:/blog/2021/08/15/via-idra/</id><content type="html">&lt;h1&gt;Day 1&lt;/h1&gt;
 &lt;p&gt;&lt;div
   class="gpx-trace"
   style="height: 400px;"
