@@ -29,14 +29,15 @@ April
 
 April-May
 
-| Year | Distance | Time    | Average pace | Comment         |
+| Year | Distance | Time   | Average pace | Comment        |
 | ---- | -------- | ------- | ------------ | --------------- |
+| 2024 | 20 km    | 1:20.27 | 4:06 min/km  | PB              |
 | 2023 | 20 km    | 1:25.34 | 4:19 min/km  |                 |
 | 2022 | 20 km    | 1:26.96 | 4:21 min/km  |                 |
 | 2021 | 18.7 km  | 1:21.39 | 4:23 min/km  | see note 2.     |
 | 2020 |          |         |              | cancelled       |
 | 2019 | 20 km    | 1:26.19 | 4:18 min/km  |                 |
-| 2018 | 20 km    | 1:25.33 | 4:16 min/km  | PB, see note 1. |
+| 2018 | 20 km    | 1:25.33 | 4:16 min/km  | see note 1.     |
 | 2017 | 20 km    | 1:29.49 | 4:27 min/km  |                 |
 | 2016 | 20 km    | 1:29.01 | 4:29 min/km  |                 |
 | 2015 | 20 km    | 1:27.01 | 4:21 min/km  |                 |
