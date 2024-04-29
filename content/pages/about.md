@@ -4,6 +4,11 @@ title: About
 
 This is a log of my activities, mostly running, cycling and hiking.
 
+* See [my results from my favorite events]({filename}events.md)
+* See [workout specific updates](/)
+
+# Credits
+
 The site is created with [Pelican](https://getpelican.com) using the
 following assets:
 
