@@ -10,7 +10,7 @@ import PinShadow from 'leaflet-gpx/pin-shadow.png';
 
 function addTrace(element) {
     var map = L.map(element);
-    var gpx = element.getAttribute("data-gpx-trace");
+    var gpxs = element.getAttribute("data-gpx-trace").split(",").map(item => item.trim());
 
     map.addControl(new L.Control.Fullscreen({
         pseudoFullscreen: true
@@ -25,18 +25,24 @@ function addTrace(element) {
         })
         .addTo(map);
 
-    new L.GPX(gpx, {
-            async: true,
-            marker_options: {
-                startIconUrl: PinIconStart,
-                endIconUrl: PinIconEnd,
-                shadowUrl: PinShadow,
-            },
-        })
-        .on('loaded', function(e) {
-            map.fitBounds(e.target.getBounds());
-        })
-        .addTo(map);
+    var bounds = new L.latLngBounds();
+    for (var i = 0; i < gpxs.length; i++) {
+        var first = i == 0;
+        var last = i == gpxs.length - 1;
+
+        var g = new L.GPX(gpxs[i], {
+                marker_options: {
+                    startIconUrl: PinIconStart,
+                    endIconUrl: PinIconEnd,
+                    shadowUrl: PinShadow,
+                },
+            })
+
+        g.addTo(map);
+        bounds.extend(g.getBounds());
+    }
+
+    map.fitBounds(bounds);
 }
 
 Array
