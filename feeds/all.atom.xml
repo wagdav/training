@@ -2,26 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Activities</title><link href="https://training.thewagner.net/" rel="alternate"></link><link href="https://training.thewagner.net/feeds/all.atom.xml" rel="self"></link><id>https://training.thewagner.net/</id><updated>2024-06-17T00:00:00+02:00</updated><entry><title>Ardèche Tour 2024</title><link href="https://training.thewagner.net/blog/2024/06/17/ardeche-tour-2024/" rel="alternate"></link><published>2024-06-17T00:00:00+02:00</published><updated>2024-06-17T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2024-06-17:/blog/2024/06/17/ardeche-tour-2024/</id><summary type="html">&lt;p&gt;The tour starts and ends in Irigny, a few km south from Lyon.  On the first day
 we ride through the Parc naturel régional du Pilat to Saint-Félicien where we
 join the &lt;a href="https://www.ardechoise.com/parcours/gorges-ardeche"&gt;Gorges - Ardèche tour&lt;/a&gt;
-recommended by the local tourist office. &lt;/p&gt;
-&lt;h1&gt;Overview&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Day&lt;/th&gt;
-&lt;th align="left"&gt;Start&lt;/th&gt;
-&lt;th align="right"&gt;Distance&lt;/th&gt;
-&lt;th align="right"&gt;Elevation gain&lt;/th&gt;
-&lt;th align="left"&gt;Route&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align="left"&gt;Irigny …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;The tour starts and ends in Irigny, a few km south from Lyon.  On the first day
+recommended by the local tourist office.&lt;/p&gt;
+&lt;p&gt;In fact, I started biking four days before the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The tour starts and ends in Irigny, a few km south from Lyon.  On the first day
 we ride through the Parc naturel régional du Pilat to Saint-Félicien where we
 join the &lt;a href="https://www.ardechoise.com/parcours/gorges-ardeche"&gt;Gorges - Ardèche tour&lt;/a&gt;
-recommended by the local tourist office. &lt;/p&gt;
-&lt;h1&gt;Overview&lt;/h1&gt;
+recommended by the local tourist office.&lt;/p&gt;
+&lt;p&gt;In fact, I started biking four days before the tour starts.  I cycled &lt;a href="https://training.thewagner.net/blog/2024/06/13/from-lausanne-to-lyon/"&gt;from
+Lausanne to Irigny in two days&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -84,42 +71,140 @@ recommended by the local tourist office. &lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;div
+  class="gpx-trace"
+  style="height: 400px;"
+  data-gpx-trace="/data/2024-ardeches/Day-01.gpx,/data/2024-ardeches/Day-02.gpx,/data/2024-ardeches/Day-03.gpx,/data/2024-ardeches/Day-04.gpx,/data/2024-ardeches/Day-05.gpx,/data/2024-ardeches/Day-06.gpx"&gt;
+&lt;/div&gt;&lt;/p&gt;</content><category term="posts"></category></entry><entry><title>From Lausanne to Lyon</title><link href="https://training.thewagner.net/blog/2024/06/13/from-lausanne-to-lyon/" rel="alternate"></link><published>2024-06-13T00:00:00+02:00</published><updated>2024-06-13T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2024-06-13:/blog/2024/06/13/from-lausanne-to-lyon/</id><summary type="html">&lt;h1&gt;Overview&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Day&lt;/th&gt;
+&lt;th align="left"&gt;Start&lt;/th&gt;
+&lt;th align="right"&gt;Distance&lt;/th&gt;
+&lt;th align="right"&gt;Elevation gain&lt;/th&gt;
+&lt;th align="left"&gt;Route&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align="left"&gt;Lausanne&lt;/td&gt;
+&lt;td align="right"&gt;158 km&lt;/td&gt;
+&lt;td align="right"&gt;1198 m&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://training.thewagner.net/data/2024-ardeches/lausanne-lyon-01.gpx"&gt;Day 1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td align="left"&gt;Belley&lt;/td&gt;
+&lt;td align="right"&gt;172 km&lt;/td&gt;
+&lt;td align="right"&gt;931 m&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://training.thewagner.net/data/2024-ardeches/lausanne-lyon-02.gpx"&gt;Day 2&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;td align="right"&gt;330 km&lt;/td&gt;
+&lt;td align="right"&gt;2129 m&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;div
+  class="gpx-trace"
+  style="height: 400px;"
+  data-gpx-trace="/data/2024-ardeches/lausanne-lyon-01.gpx,/data/2024-ardeches/lausanne-lyon-02.gpx"&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;h1&gt;Day 1&lt;/h1&gt;
+&lt;p&gt;I wake up around 8.  I have 160 km to ride today from Lausanne to Belley.  I'm
+not in a …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Overview&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Day&lt;/th&gt;
+&lt;th align="left"&gt;Start&lt;/th&gt;
+&lt;th align="right"&gt;Distance&lt;/th&gt;
+&lt;th align="right"&gt;Elevation gain&lt;/th&gt;
+&lt;th align="left"&gt;Route&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align="left"&gt;Lausanne&lt;/td&gt;
+&lt;td align="right"&gt;158 km&lt;/td&gt;
+&lt;td align="right"&gt;1198 m&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://training.thewagner.net/data/2024-ardeches/lausanne-lyon-01.gpx"&gt;Day 1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td align="left"&gt;Belley&lt;/td&gt;
+&lt;td align="right"&gt;172 km&lt;/td&gt;
+&lt;td align="right"&gt;931 m&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://training.thewagner.net/data/2024-ardeches/lausanne-lyon-02.gpx"&gt;Day 2&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;td align="right"&gt;330 km&lt;/td&gt;
+&lt;td align="right"&gt;2129 m&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;div
   class="gpx-trace"
   style="height: 400px;"
-  data-gpx-trace="/data/2024-ardeches/Day-01.gpx"&gt;
+  data-gpx-trace="/data/2024-ardeches/lausanne-lyon-01.gpx,/data/2024-ardeches/lausanne-lyon-02.gpx"&gt;
 &lt;/div&gt;&lt;/p&gt;
+&lt;h1&gt;Day 1&lt;/h1&gt;
+&lt;p&gt;I wake up around 8.  I have 160 km to ride today from Lausanne to Belley.  I'm
+not in a hurry. The days are long, weather forecast is sunny, 20 degrees I have
+all the time to enjoy my morning coffee while reading the news.&lt;/p&gt;
+&lt;p&gt;My gear is almost ready.  I'm taking my Ortlieb saddlebag, plus a small frame
+bag for the lights and for a spare battery. Should be enough for a multi day
+trip.&lt;/p&gt;
+&lt;p&gt;I'm reviewing what cables to bring. I have a charger cable for my phone, the
+Garmin head unit, the pedals with power meter and my shifters. They are all
+with different connectors.&lt;/p&gt;
+&lt;p&gt;It feels strange to have four kinds of batteries in my (non-electric) road
+bike. Anyhow, during a 1000km trip I need to be ready to charge their
+batteries, so I bring four different cables with me. I pay the price for
+choosing the latest tech.&lt;/p&gt;
+&lt;p&gt;Just before leaving, I remember that my cleats are completely worn, so I change
+them quickly before starting to roll.&lt;/p&gt;
+&lt;p&gt;Until Geneva, I know the road well I don't need sightseeing and I advance well:
+60km in 2 hours.&lt;/p&gt;
+&lt;p&gt;I cross Geneva in the lunchtime peak traffic.  My Garmin takes me through a few
+loops, but I don't second guess it because I don't know the city well.&lt;/p&gt;
+&lt;p&gt;West of Geneva I find the Via Rhône cycling road and the car traffic completely
+disappears. The road is well signaled and pretty calm. I cross many cyclists. I
+need to stay on this path until Belley where I booked a room for tonight.&lt;/p&gt;
+&lt;p&gt;At around 15:30 I'm at 100km, and I stop at a bakery.  On the bike I ate a Clif
+Bar and two bananas.  Now I pick a grilled vegetable sandwich and a coffee. The
+sandwich is huge, tastes great. There's no shade around the bakery, so I finish
+it quickly and get rolling. 60 km to go.&lt;/p&gt;
+&lt;p&gt;I start the see the Rhône next to me. The road goes up and down, there are even
+a few longer climbs, but nothing too steep.&lt;/p&gt;
 &lt;h1&gt;Day 2&lt;/h1&gt;
-&lt;p&gt;&lt;div
-  class="gpx-trace"
-  style="height: 400px;"
-  data-gpx-trace="/data/2024-ardeches/Day-02.gpx"&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h1&gt;Day 3&lt;/h1&gt;
-&lt;p&gt;&lt;div
-  class="gpx-trace"
-  style="height: 400px;"
-  data-gpx-trace="/data/2024-ardeches/Day-03.gpx"&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h1&gt;Day 4&lt;/h1&gt;
-&lt;p&gt;&lt;div
-  class="gpx-trace"
-  style="height: 400px;"
-  data-gpx-trace="/data/2024-ardeches/Day-04.gpx"&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h1&gt;Day 5&lt;/h1&gt;
-&lt;p&gt;&lt;div
-  class="gpx-trace"
-  style="height: 400px;"
-  data-gpx-trace="/data/2024-ardeches/Day-05.gpx"&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h1&gt;Day 6&lt;/h1&gt;
-&lt;p&gt;&lt;div
-  class="gpx-trace"
-  style="height: 400px;"
-  data-gpx-trace="/data/2024-ardeches/Day-06.gpx"&gt;
-&lt;/div&gt;&lt;/p&gt;</content><category term="posts"></category></entry><entry><title>A travers Romanel 2024</title><link href="https://training.thewagner.net/blog/2024/06/07/a-travers-romanel-2024/" rel="alternate"></link><published>2024-06-07T00:00:00+02:00</published><updated>2024-06-07T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2024-06-07:/blog/2024/06/07/a-travers-romanel-2024/</id><summary type="html">&lt;p&gt;I participated in the running race &lt;a href="https://www.atraversromanel.ch/"&gt;A travel Romanel&lt;/a&gt; the first time.  &lt;/p&gt;
+&lt;p&gt;I start the day at 8 A.M. with a typical French breakfast: baguette, butter,
+jam, homemade cake with fruit juice and lots of coffee. I have 170 km ahead of
+me, I store as much energy as I can.&lt;/p&gt;
+&lt;p&gt;Rain is forecast, I'm planning to wear with my rain gear.  When I leave it's
+covered and wet, but, fortunately, not raining.&lt;/p&gt;
+&lt;p&gt;I ride three hours, time for lunch!  Just like yesterday I find a boulangerie
+at a center of a small town. I pay 9.5 EUR for a sandwich, coke and a cake.&lt;/p&gt;
+&lt;p&gt;Now it starts raining for real, so I put on my raincoat. It rains for about an
+hour at low intensity. Later even the sun comes out!&lt;/p&gt;
+&lt;p&gt;Today there's more unpaved section than yesterday. Fortunately, the gravel is
+well compacted it rolls well.  My bike however becomes filthy.  I'll wash
+it tonight.&lt;/p&gt;
+&lt;p&gt;I cross Lyon along the Rhône. There are walkers, runners and bikers sharing the
+large promenade on the banks.  Friday evening traffic is terrible. I need to
+pay attention with the heat and the accumulated fatigue.  I arrive to Irigny, a
+few km south of Lyon.  There's a short climb to reach the apartment.&lt;/p&gt;
+&lt;p&gt;I'll spend the next two days in Lyon resting and sightseeing, then starts a &lt;a href="https://training.thewagner.net/blog/2024/06/17/ardeche-tour-2024/"&gt;six
+day tour in the Ardèche&lt;/a&gt;.&lt;/p&gt;</content><category term="posts"></category></entry><entry><title>A travers Romanel 2024</title><link href="https://training.thewagner.net/blog/2024/06/07/a-travers-romanel-2024/" rel="alternate"></link><published>2024-06-07T00:00:00+02:00</published><updated>2024-06-07T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2024-06-07:/blog/2024/06/07/a-travers-romanel-2024/</id><summary type="html">&lt;p&gt;I participated in the running race &lt;a href="https://www.atraversromanel.ch/"&gt;A travel Romanel&lt;/a&gt; the first time.  &lt;/p&gt;
 &lt;p&gt;I finished the 10.5 km race in 42:57.35, corresponding to a 4:11 min/km average
 pace.  The race does three laps across Romanel-sur-Lausanne with a total of 140
 m of elevation gain.&lt;/p&gt;
