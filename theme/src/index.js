@@ -25,24 +25,27 @@ function addTrace(element) {
         })
         .addTo(map);
 
-    var bounds = new L.latLngBounds();
-    for (var i = 0; i < gpxs.length; i++) {
-        var first = i == 0;
-        var last = i == gpxs.length - 1;
-
-        var g = new L.GPX(gpxs[i], {
+    var bounds = [];
+    gpxs.forEach(gpx => {
+        bounds.push(new Promise((resolve, reject) => {
+            new L.GPX(gpx, {
+                async: true,
                 marker_options: {
                     startIconUrl: PinIconStart,
                     endIconUrl: PinIconEnd,
                     shadowUrl: PinShadow,
                 },
-            })
+            }).on('loaded', function(e) {
+                resolve(e.target.getBounds());
+            }).addTo(map);
+        }));
+    });
 
-        g.addTo(map);
-        bounds.extend(g.getBounds());
-    }
-
-    map.fitBounds(bounds);
+    Promise.all(bounds).then((values) => {
+        var b = new L.latLngBounds();
+        values.forEach((v) => b.extend(v));
+        map.fitBounds(b);
+    });
 }
 
 Array
