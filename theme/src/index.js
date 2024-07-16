@@ -6,7 +6,6 @@ import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
 import 'leaflet-gpx';
 import PinIconStart from 'leaflet-gpx/pin-icon-start.png';
 import PinIconEnd from 'leaflet-gpx/pin-icon-end.png';
-import PinShadow from 'leaflet-gpx/pin-shadow.png';
 
 function addTrace(element) {
     var map = L.map(element);
@@ -30,10 +29,9 @@ function addTrace(element) {
         bounds.push(new Promise((resolve, reject) => {
             new L.GPX(gpx, {
                 async: true,
-                marker_options: {
-                    startIconUrl: PinIconStart,
-                    endIconUrl: PinIconEnd,
-                    shadowUrl: PinShadow,
+                markers: {
+                    startIcon: PinIconStart,
+                    endIcon: PinIconEnd,
                 },
             }).on('loaded', function(e) {
                 resolve(e.target.getBounds());
