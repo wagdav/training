@@ -4,8 +4,8 @@ import 'leaflet-fullscreen';
 import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
 
 import 'leaflet-gpx';
-import PinIconStart from 'leaflet-gpx/pin-icon-start.png';
-import PinIconEnd from 'leaflet-gpx/pin-icon-end.png';
+import PinIconStart from 'leaflet-gpx/icons/pin-icon-start.png';
+import PinIconEnd from 'leaflet-gpx/icons/pin-icon-end.png';
 
 function addTrace(element) {
     var map = L.map(element);
