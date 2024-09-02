@@ -531,9 +531,9 @@ leaflet-fullscreen@*:
   integrity sha1-CcYcS6xF9jsu4Sav2H5c2XZQ/Bs=
 
 leaflet-gpx@*:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/leaflet-gpx/-/leaflet-gpx-2.1.1.tgz#2534c9f84f8cba7faa287b45f40446d59ea46a2b"
-  integrity sha512-SJWchz4QNwiACTLuG6mfGJjACUlKYCoBKAUWuqBmGuoYWGRysEB7vdUke5X5hHGPLw1vTeTytFnArO+GEqcuIA==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/leaflet-gpx/-/leaflet-gpx-2.1.2.tgz#ebc606830702e71d0d1c66974ccc6f3fb0e79a35"
+  integrity sha512-lKoEPlAWel9KXn9keg6Dmyt7gmj5IYyD8CKuxivN+77GpZr2bpKliwFvZJxLUHmNu4fICmCySyxhm5qjZuvvQg==
 
 leaflet@*:
   version "1.9.4"
