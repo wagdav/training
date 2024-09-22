@@ -15,6 +15,8 @@ finish 5th in my age category and I'm 15th overall.
 | 11.09 | Chavornay | 8.6 km   | 36.01,9 | 4.15 | 7/70    | 25/241          |
 | 18.09 | Oron      | 6.7 km   | 25.37,4 | 3.53 | 7/73    | 21/267          |
 
+Source: [datasport.com](https://services.datasport.com/2024/lauf/tdpv/etape6/cup014.htm)
+
 In the series, Gilly is the farthest from Lausanne: getting there by train and
 bus was easy, but in the evening there's only return connection per hour. After
 I cross the finish line, I keep jogging to the bus stop.  I change while
