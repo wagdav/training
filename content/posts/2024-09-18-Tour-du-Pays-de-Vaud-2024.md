@@ -32,7 +32,7 @@ finishing I jump in the lake to cool down.
 
 For Echandens the warm-up is longer than expected.  Unfortunately, in the
 morning I forget my bib at home so from work I must do a detour to pick it up.
-Despite the extra cycling in the legs, running feel good.  I like this stage:
+Despite the extra cycling in the legs, running feels good.  I like this stage:
 it has some fun parts in the forest and through the fields around the village.
 
 Chavornay is longest race in the autumn season.  It rains heavily and I slip a
