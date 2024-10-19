@@ -9,10 +9,9 @@ The disc brakes and the electronic shifting represent a huge step up from my 201
 
 Additonally, with the purchase I was offered a professional bike fit, this also contributes to the better comfort.
 
-![Image1](/images//cervelo-caledonia5-1.webp)
+<img src=/images//cervelo-caledonia5-1.webp width=100%>
 
-![Image2](/images//cervelo-caledonia5-2.webp)
-
+<img src=/images//cervelo-caledonia5-2.webp width=100%>
 
 # Service history
 
