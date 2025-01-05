@@ -1,7 +1,7 @@
 {
   description = "The contents of https://training.thewagner.net";
 
-  inputs.nixpkgs.url = "nixpkgs/nixos-20.09";
+  inputs.nixpkgs.url = "nixpkgs/nixos-24.11";
 
   outputs = { self, nixpkgs }:
     let
