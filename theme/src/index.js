@@ -46,6 +46,4 @@ function addTrace(element) {
     });
 }
 
-Array
-    .from(document.getElementsByClassName("gpx-trace"))
-    .forEach(addTrace);
+document.querySelectorAll("[data-gpx-trace]").forEach(addTrace);
