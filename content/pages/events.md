@@ -31,7 +31,8 @@ April-May
 
 | Year             | Distance | Time   | Average pace | Comment        |
 | ----             | -------- | ------- | ------------ | --------------- |
-| [2024][20km2024] | 20 km    | 1:20.27 | 4:06 min/km  | PB              |
+| [2025][20km2025] | 20 km    | 1:19.05 | 3:57 min/km  | PB              |
+| [2024][20km2024] | 20 km    | 1:20.27 | 4:06 min/km  |                 |
 | 2023             | 20 km    | 1:25.34 | 4:19 min/km  |                 |
 | 2022             | 20 km    | 1:26.96 | 4:21 min/km  |                 |
 | 2021             | 18.7 km  | 1:21.39 | 4:23 min/km  | see note 2.     |
@@ -100,3 +101,4 @@ End of October
 
 [20km2019]: {filename}../posts/2019-05-05-20km-de-Lausanne-2019.md
 [20km2024]: {filename}../posts/2024-04-28-20km-de-Lausanne-2024.md
+[20km2025]: {filename}../posts/2025-05-04-20km-de-Lausanne-2025.md
