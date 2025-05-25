@@ -40,15 +40,19 @@ Siena.
 
 We walk to the [Siena Bike Shop][BikeShop] to pick-up our gravel bikes.  They
 rent us three Bianchis with 40mm gravel tyres.  It takes an hour to set
-everything up: the mechanic mounts our pedals, we adjust the seats height and
+everything up: the mechanic mounts our pedals, we adjust the seat height and
 install our bike bags.
 
 We leave the cars in the parking garage of the Siena train station where the
 parking costs only 2€ per day.
 
-We have lunch on a [beautiful terrace in Murlo][Day1Lunch].
+We start pedalling around eleven.  We get excited on the first gravel sectors.
+The bikes roll well on the dry, compacted white roads.
 
-Some french tourist ask for the Gladiator House which we miss.
+At about halfway we have lunch on a [beautiful terrace in Murlo][Day1Lunch].
+
+Some french tourist ask for the Gladiator House which we miss.  Martijn has a
+flat which he quickly repairs.
 
 Before the last climb of the day we stop in Bagno Vignoni.
 
