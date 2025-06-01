@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Activities - posts</title><link href="https://training.thewagner.net/" rel="alternate"></link><link href="https://training.thewagner.net/feeds/posts.atom.xml" rel="self"></link><id>https://training.thewagner.net/</id><updated>2025-05-19T00:00:00+02:00</updated><entry><title>Toscana Gravel 2025</title><link href="https://training.thewagner.net/blog/2025/05/19/toscana-gravel-2025/" rel="alternate"></link><published>2025-05-19T00:00:00+02:00</published><updated>2025-05-19T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2025-05-19:/blog/2025/05/19/toscana-gravel-2025/</id><summary type="html">&lt;table&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Activities - posts</title><link href="https://training.thewagner.net/" rel="alternate"></link><link href="https://training.thewagner.net/feeds/posts.atom.xml" rel="self"></link><id>https://training.thewagner.net/</id><updated>2025-05-19T00:00:00+02:00</updated><entry><title>Toscana Gravel 2025</title><link href="https://training.thewagner.net/blog/2025/05/19/toscana-gravel-2025/" rel="alternate"></link><published>2025-05-19T00:00:00+02:00</published><updated>2025-05-19T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2025-05-19:/blog/2025/05/19/toscana-gravel-2025/</id><summary type="html">&lt;p&gt;Six of us went for a five-day bikepacking gravel cycling trip in Tuscany.  The
+tour started and ended in Siena.&lt;/p&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Day&lt;/th&gt;
 &lt;th style="text-align: left;"&gt;Start&lt;/th&gt;
 &lt;th style="text-align: right;"&gt;Distance&lt;/th&gt;
 &lt;th style="text-align: right;"&gt;Elevation gain&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;On paved road&lt;/th&gt;
 &lt;th style="text-align: left;"&gt;Route&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -15,6 +18,7 @@
 &lt;td style="text-align: left;"&gt;Siena&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;100 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1901 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;39%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-1.gpx"&gt;Day 1&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -22,34 +26,21 @@
 &lt;td style="text-align: left;"&gt;Castiglione d'Orcia&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;96 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1589 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;54%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-2.gpx"&gt;Day 2&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;3&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;Bagni San Filippo&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;88 km&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;1667 m&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-3.gpx"&gt;Day 3&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;Bagni di Petriolo&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;68 km&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;1275 m&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-4.gpx"&gt;Day 4&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;Asciano&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;92 km&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;1693 m&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-5.gpx"&gt;Day …&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;table&gt;
+&lt;td style="text-align: left;"&gt;Bagni …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;Six of us went for a five-day bikepacking gravel cycling trip in Tuscany.  The
+tour started and ended in Siena.&lt;/p&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Day&lt;/th&gt;
 &lt;th style="text-align: left;"&gt;Start&lt;/th&gt;
 &lt;th style="text-align: right;"&gt;Distance&lt;/th&gt;
 &lt;th style="text-align: right;"&gt;Elevation gain&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;On paved road&lt;/th&gt;
 &lt;th style="text-align: left;"&gt;Route&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -59,6 +50,7 @@
 &lt;td style="text-align: left;"&gt;Siena&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;100 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1901 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;39%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-1.gpx"&gt;Day 1&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -66,6 +58,7 @@
 &lt;td style="text-align: left;"&gt;Castiglione d'Orcia&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;96 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1589 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;54%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-2.gpx"&gt;Day 2&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -73,6 +66,7 @@
 &lt;td style="text-align: left;"&gt;Bagni San Filippo&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;88 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1667 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;83%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-3.gpx"&gt;Day 3&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -80,6 +74,7 @@
 &lt;td style="text-align: left;"&gt;Bagni di Petriolo&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;68 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1275 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;26%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-4.gpx"&gt;Day 4&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -87,6 +82,7 @@
 &lt;td style="text-align: left;"&gt;Asciano&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;92 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;1693 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;63%&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2025-toscana-gravel/Tuscany-5.gpx"&gt;Day 5&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -94,6 +90,7 @@
 &lt;td style="text-align: left;"&gt;&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;444 km&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;8125 m&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -103,7 +100,34 @@
   style="height: 400px;"
   data-gpx-trace="/data/2025-toscana-gravel/Tuscany-1.gpx,/data/2025-toscana-gravel/Tuscany-2.gpx,/data/2025-toscana-gravel/Tuscany-3.gpx,/data/2025-toscana-gravel/Tuscany-4.gpx,/data/2025-toscana-gravel/Tuscany-5.gpx"&gt;
 &lt;/div&gt;
-&lt;/p&gt;</content><category term="posts"></category></entry><entry><title>20 km de Lausanne 2025</title><link href="https://training.thewagner.net/blog/2025/05/04/20-km-de-lausanne-2025/" rel="alternate"></link><published>2025-05-04T00:00:00+02:00</published><updated>2025-05-04T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2025-05-04:/blog/2025/05/04/20-km-de-lausanne-2025/</id><summary type="html">&lt;p&gt;1:19:05, a new personal best on my favorite race the &lt;a href="https://20km.ch"&gt;20km de Lausanne&lt;/a&gt;.  Weather is covered, 15°C.&lt;/p&gt;
+&lt;/p&gt;
+&lt;h1&gt;Sunday&lt;/h1&gt;
+&lt;p&gt;We aim to start at 7 am from Lausanne.  We have two cars with three cyclist
+each and four bikes in total plus luggage.  Riccardo and I plan to rent bikes
+in Siena, the others bring their own bikes.&lt;/p&gt;
+&lt;p&gt;Kees brings Mr Ride, an old mountain bike, from the Netherlands but during a
+Mollendruz-Marchariuz prologue the day before, he decides against using it for
+the trip.  Riccardo orders an emergency Bianchi for him.  This makes three of
+us renting gravel bikes in Siena.  The others use their endurance road bike
+with 32 mm tyres.&lt;/p&gt;
+&lt;p&gt;I buy bread and pastry for the group at Chez Manu, a bakery nearby where I used
+to live.  We finish loading the cars and we start our 700km drive towards
+Siena.&lt;/p&gt;
+&lt;h1&gt;Monday&lt;/h1&gt;
+&lt;p&gt;We walk to the &lt;a href="https://www.sienabikeshop.it/"&gt;Siena Bike Shop&lt;/a&gt; to pick-up our gravel bikes.  They
+rent us three Bianchis with 40mm gravel tyres.  It takes an hour to set
+everything up: the mechanic mounts our pedals, we adjust the seat height and
+install our bike bags.&lt;/p&gt;
+&lt;p&gt;We leave the cars in the parking garage of the Siena train station where the
+parking costs only 2€ per day.&lt;/p&gt;
+&lt;p&gt;We start pedalling around eleven.  We get excited on the first gravel sectors.
+The bikes roll well on the dry, compacted white roads.&lt;/p&gt;
+&lt;p&gt;At about halfway we have lunch on a &lt;a href="https://ristorantelibratum.it/en"&gt;beautiful terrace in Murlo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some french tourist ask for the Gladiator House which we miss.  Martijn has a
+flat which he quickly repairs.&lt;/p&gt;
+&lt;p&gt;Before the last climb of the day we stop in Bagno Vignoni.&lt;/p&gt;
+&lt;p&gt;Riccardo and I do the proper path with 15-20% bits.&lt;/p&gt;
+&lt;p&gt;Dinner in a family restaurant.&lt;/p&gt;</content><category term="posts"></category></entry><entry><title>20 km de Lausanne 2025</title><link href="https://training.thewagner.net/blog/2025/05/04/20-km-de-lausanne-2025/" rel="alternate"></link><published>2025-05-04T00:00:00+02:00</published><updated>2025-05-04T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2025-05-04:/blog/2025/05/04/20-km-de-lausanne-2025/</id><summary type="html">&lt;p&gt;1:19:05, a new personal best on my favorite race the &lt;a href="https://20km.ch"&gt;20km de Lausanne&lt;/a&gt;.  Weather is covered, 15°C.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Average pace: 3.57 min/km&lt;/li&gt;
 &lt;li&gt;Rank: 23.&lt;/li&gt;
