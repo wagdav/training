@@ -25,13 +25,13 @@
     in
     rec {
 
-      devShell."${system}" = pkgs.mkShell {
+      devShells."${system}".default = pkgs.mkShell {
         buildInputs = [ pkgs.yarn pythonEnv pkgs.ghp-import ];
       };
 
-      defaultPackage."${system}" = packages."${system}".site;
+      packages."${system}" = rec {
+        default = site;
 
-      packages."${system}" = {
         site = pkgs.stdenv.mkDerivation {
           name = "training-thewagner-net-${self.shortRev or "dirty"}";
 
