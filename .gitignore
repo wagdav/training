@@ -8,3 +8,5 @@ node_modules
 theme/static/dist
 
 result*
+
+.cpcache
