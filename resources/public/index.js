@@ -20,6 +20,10 @@ function addTrace(element) {
         bounds.push(new Promise((resolve, reject) => {
             new L.GPX(gpx, {
                 async: true,
+                //markers: {
+                //    startIcon: PinIconStart,
+                //    endIcon: PinIconEnd,
+                //},
             }).on('loaded', function(e) {
                 resolve(e.target.getBounds());
             }).addTo(map);

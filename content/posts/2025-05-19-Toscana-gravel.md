@@ -1,17 +1,13 @@
----
-title: Toscana Gravel 2025
----
-
 Six of us went for a five-day bikepacking gravel cycling trip in Tuscany.  The
 tour started and ended in Siena.
 
 | Day   | Start                     | Distance | Elevation gain | On paved road | Route
 | ---   | :------------------------ | -------: | -------------: | ------------: | :--
-| 1     | Siena                     | 100 km   |  1901 m        | 39%           | [Day 1]({static}../data/2025-toscana-gravel/Tuscany-1.gpx)
-| 2     | Castiglione d'Orcia       |  96 km   |  1589 m        | 54%           | [Day 2]({static}../data/2025-toscana-gravel/Tuscany-2.gpx)
-| 3     | Bagni San Filippo         |  88 km   |  1667 m        | 83%           | [Day 3]({static}../data/2025-toscana-gravel/Tuscany-3.gpx)
-| 4     | Bagni di Petriolo         |  68 km   |  1275 m        | 26%           | [Day 4]({static}../data/2025-toscana-gravel/Tuscany-4.gpx)
-| 5     | Asciano                   |  92 km   |  1693 m        | 63%           | [Day 5]({static}../data/2025-toscana-gravel/Tuscany-5.gpx)
+| 1     | Siena                     | 100 km   |  1901 m        | 39%           | [Day 1](/data/2025-toscana-gravel/Tuscany-1.gpx)
+| 2     | Castiglione d'Orcia       |  96 km   |  1589 m        | 54%           | [Day 2](/data/2025-toscana-gravel/Tuscany-2.gpx)
+| 3     | Bagni San Filippo         |  88 km   |  1667 m        | 83%           | [Day 3](/data/2025-toscana-gravel/Tuscany-3.gpx)
+| 4     | Bagni di Petriolo         |  68 km   |  1275 m        | 26%           | [Day 4](/data/2025-toscana-gravel/Tuscany-4.gpx)
+| 5     | Asciano                   |  92 km   |  1693 m        | 63%           | [Day 5](/data/2025-toscana-gravel/Tuscany-5.gpx)
 | Total |                           | 444 km   |  8125 m        |               |
 
 <div
