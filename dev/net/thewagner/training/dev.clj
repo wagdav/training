@@ -1,0 +1,18 @@
+(ns net.thewagner.training.dev
+  (:require [net.thewagner.training.core :as blog]
+            [powerpack.dev :as dev]))
+
+; 1. This is how Powerpack gets a hold of your configuration in development.
+; 2. Evaluate this form to start the site
+; 3. Evaluate this form to stop the site
+; 4. Evaluate this form to reload all your code, rebuild the database and start the site.
+; 5. Evaluate this form to grab a copy of the app instance. You can inspect it to find what configuration is being used, etc. You do not need this, it's just for the curious.))
+(defmethod dev/configure! :default []
+  blog/config)  ;; 1
+
+(comment
+  (dev/start)   ;; 2
+  (dev/stop)    ;; 3
+  (dev/reset)   ;; 4
+
+  (dev/get-app)) ;; 5
