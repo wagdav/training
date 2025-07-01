@@ -1,0 +1,60 @@
+/* Imports */
+body {
+  margin: 40px auto;
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+  font-family: serif;
+}
+
+h1, h2, h3 {
+  line-height: 1.2
+}
+
+#banner {
+  text-align: center;
+}
+
+#banner > a {
+  font-size: 2em;
+}
+
+#banner a {
+  text-decoration: none;
+}
+
+#banner li {
+  display: inline;
+}
+
+#banner ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+a, a:visited {
+  color: rgb(65, 110, 210);
+}
+
+.entry-content p {
+  text-align: justify;
+}
