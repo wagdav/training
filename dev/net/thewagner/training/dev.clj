@@ -10,6 +10,12 @@
 (defmethod dev/configure! :default []
   blog/config)  ;; 1
 
+(defn get-uris [db]
+  (->> (d/q '[:find [?uri ...]
+              :where
+              [?e :page/uri ?uri]]
+            db)))
+
 (comment
   (dev/start)   ;; 2
   (dev/stop)    ;; 3
@@ -21,6 +27,14 @@
 
   (def db (d/db (:datomic/conn app)))
 
+  (get-blog-posts db)
   (->> (d/entity db [:page/uri "/blog-posts/first-post/"])
        :blog-post/author
-       (into {})))
+       (into {}))
+
+  ; print schema
+  (clojure.pprint/pprint
+    (map #(->> % first (d/entity db) d/touch)
+      (d/q '[:find ?v
+             :where [_ :db.install/attribute ?v]]
+         db))))
