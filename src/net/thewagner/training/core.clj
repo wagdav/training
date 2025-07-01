@@ -1,8 +1,7 @@
 (ns net.thewagner.training.core
   (:require [datomic.api :as d]
             [net.thewagner.training.ingest :as ingest]
-            [powerpack.markdown :as md]
-            [clojure.string :as string]))
+            [powerpack.markdown :as md]))
 
 (defn get-blog-posts [db]
   (->> (d/q '[:find [?e ...]
@@ -16,7 +15,13 @@
    [:head
     (when title [:title title])]
    [:body
-    content]])
+    content]
+   [:hr]
+   [:footer#contentinfo.body
+     [:br]
+     "The contents of this website is licensed under a "
+     [:a {:rel "license" :href "http://creativecommons.org/licenses/by/4.0/"}
+       "Creative Commons Attribution 4.0 International License"]]])
 
 (def header
   [:header#banner.body
