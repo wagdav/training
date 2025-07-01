@@ -13,8 +13,8 @@
    [:a {:href "/"} "Activities"]
    [:nav
     [:ul
-     [:li [:a {:href "/about"} "About"]]
-     [:li [:a {:href "/events"} "Events"]]]]])
+     [:li [:a {:href "/pages/about/"} "About"]]
+     [:li [:a {:href "/pages/events/"} "Events"]]]]])
 
 (defn render-page [context page]
   (layout {:title "Activities"}
