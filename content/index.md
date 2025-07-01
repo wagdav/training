@@ -1,0 +1,2 @@
+:page/uri /
+:page/body

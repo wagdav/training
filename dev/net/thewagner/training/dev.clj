@@ -10,12 +10,6 @@
 (defmethod dev/configure! :default []
   blog/config)  ;; 1
 
-(defn get-uris [db]
-  (->> (d/q '[:find [?uri ...]
-              :where
-              [?e :page/uri ?uri]]
-            db)))
-
 (comment
   (dev/start)   ;; 2
   (dev/stop)    ;; 3
@@ -23,14 +17,15 @@
 
   (def app (dev/get-app)) ;; 5
 
-  (require '[datomic.api :as d])
 
+  (require '[datomic.api :as d])
   (def db (d/db (:datomic/conn app)))
 
-  (get-blog-posts db)
   (->> (d/entity db [:page/uri "/blog-posts/first-post/"])
        :blog-post/author
        (into {}))
+
+  (get-uris db)
 
   ; print schema
   (clojure.pprint/pprint
