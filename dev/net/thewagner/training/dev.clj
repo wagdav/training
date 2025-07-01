@@ -15,4 +15,12 @@
   (dev/stop)    ;; 3
   (dev/reset)   ;; 4
 
-  (dev/get-app)) ;; 5
+  (def app (dev/get-app)) ;; 5
+
+  (require '[datomic.api :as d])
+
+  (def db (d/db (:datomic/conn app)))
+
+  (->> (d/entity db [:page/uri "/blog-posts/first-post/"])
+       :blog-post/author
+       (into {})))
