@@ -32,7 +32,7 @@
      [:li [:a {:href "/pages/events/"} "Events"]]]]])
 
 (defn render-blog-post [context page]
-  (layout {:title "Blog post title"}
+  (layout {:title (:page/title page)}
     header
     (md/render-html (:page/body page))))
 
@@ -45,7 +45,7 @@
        [:li [:a {:href (:page/uri blog-post)} (:page/uri blog-post)]])]))
 
 (defn render-page* [context page]
-  (layout {:title "Page title"}
+  (layout {:title (:page/title page)}
     header
     (md/render-html (:page/body page))))
 
@@ -56,7 +56,7 @@
     :page.kind/page (render-page* context page)))
 
 (def config
-  {:site/title "Training"
+  {:site/title "Activities"
    :powerpack/render-page #'render-page
    :powerpack/create-ingest-tx #'ingest/create-tx
    :optimus/bundles {"app.css"
