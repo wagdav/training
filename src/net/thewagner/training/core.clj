@@ -51,15 +51,14 @@
 
 (defn render-page [context page]
   (case (:page/kind page)
-    (:page.kind/blog-post (render-blog-post context page))
-    (:page.kind/frontpage (render-frontpage context page))
-    (:page.kind/page (render-page* context page))))
+    :page.kind/blog-post (render-blog-post context page)
+    :page.kind/frontpage (render-frontpage context page)
+    :page.kind/page (render-page* context page)))
 
 (def config
   {:site/title "Training"
    :powerpack/render-page #'render-page
    :powerpack/create-ingest-tx #'ingest/create-tx
-   :powerpack/log-level :debug
    :optimus/bundles {"app.css"
                      {:public-dir "public"
                       :paths ["/main.css"]}}})
