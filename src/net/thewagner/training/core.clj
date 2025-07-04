@@ -40,9 +40,11 @@
   (layout {:title "Activities"}
     header
     (md/render-html (:page/body page))
-    [:ul
+    [:table
      (for [blog-post (get-blog-posts (:app/db context))]
-       [:li [:a {:href (:page/uri blog-post)} (:page/uri blog-post)]])]))
+       [:tr
+         [:td [:a {:href (:page/uri blog-post)} (:page/uri blog-post)]]
+         [:td (str (:page/datePublished blog-post))]])]))
 
 (defn render-page* [context page]
   (layout {:title (:page/title page)}

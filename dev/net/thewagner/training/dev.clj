@@ -21,8 +21,7 @@
   (require '[datomic.api :as d])
   (def db (d/db (:datomic/conn app)))
 
-  (->> (d/entity db [:page/uri "/blog-posts/first-post/"])
-       :blog-post/author
+  (->> (d/entity db [:page/uri "/posts/2024-06-07-A-travers-Romanel-2024/"])
        (into {}))
 
   (get-uris db)
