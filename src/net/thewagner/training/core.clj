@@ -8,7 +8,8 @@
               :where
               [?e :page/kind :page.kind/blog-post]]
             db)
-       (map #(d/entity db %))))
+       (map #(d/entity db %))
+       (sort-by :page/datePublished #(compare %2 %1))))
 
 (defn layout [{:keys [title]} & content]
   [:html
@@ -43,7 +44,7 @@
     [:table
      (for [blog-post (get-blog-posts (:app/db context))]
        [:tr
-         [:td [:a {:href (:page/uri blog-post)} (:page/uri blog-post)]]
+         [:td [:a {:href (:page/uri blog-post)} (or (:page/title blog-post) (:page/uri blog-post))]]
          [:td (str (:page/datePublished blog-post))]])]))
 
 (defn render-page* [context page]
