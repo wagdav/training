@@ -1,11 +1,10 @@
----
-title: Trail de Vallée de Joux 2019
-distance: 21
-time: 02:08:04
-elevation_gain: 804m
-tags: race, run
-trace: /data/2019-10-13_10-19_Sun.gpx
----
+:page/title Trail de Vallée de Joux 2019
+:page/distance 21
+:page/time 02:08:04
+:page/elevation_gain 804m
+:page/tags race, run
+:page/trace /data/2019-10-13_10-19_Sun.gpx
+:page/body
 
 The second time I run [this race](http://trailvalleedejoux.ch/). A bit slower than last year, the run felt good. Great weather.
 

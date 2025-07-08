@@ -1,6 +1,5 @@
----
-title: Via Alpina
----
+:page/title Via Alpina
+:page/body
 
 # Day 1
 

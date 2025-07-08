@@ -1,10 +1,9 @@
----
-title: Trail des Chateaux 2018
-distance: 28
-time: 3:16.18
-elevation_gain: 1375m
-tags: race, run
----
+:page/title Trail des Chateaux 2018
+:page/distance 28
+:page/time 3:16.18
+:page/elevation_gain 1375m
+:page/tags race, run
+:page/body
 
 The first edition of the [Trail des Chateux](https://www.coursedenoel.ch/trail-des-chateaux-2018!/3222-trail-des-chateaux-2018!.html).  Very nice route with very steep climbs.
 

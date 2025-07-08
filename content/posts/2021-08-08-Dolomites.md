@@ -1,6 +1,5 @@
----
-title: Cycling in the Dolomites
----
+:page/title Cycling in the Dolomites
+:page/body
 
 # Day 1
 

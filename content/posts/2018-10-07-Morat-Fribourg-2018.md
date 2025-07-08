@@ -1,8 +1,7 @@
----
-title: Morat-Fribourg 2018
-distance: 17
-tags: race, run
----
+:page/title Morat-Fribourg 2018
+:page/distance 17
+:page/tags race, run
+:page/body
 
 # Summary
 

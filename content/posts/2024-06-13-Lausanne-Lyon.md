@@ -1,6 +1,5 @@
----
-title: From Lausanne to Lyon
----
+:page/title From Lausanne to Lyon
+:page/body
 
 # Overview
 
