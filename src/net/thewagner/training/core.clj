@@ -24,6 +24,20 @@
      [:a {:rel "license" :href "http://creativecommons.org/licenses/by/4.0/"}
        "Creative Commons Attribution 4.0 International License"]]])
 
+(defn render-date-abbr [date]
+  [:abbr.published
+    {:title (-> (java.text.SimpleDateFormat. "yyyy-MM-dd'T'HH:mm:ssZ")
+                (.format date))}
+    (-> (java.text.SimpleDateFormat. "E dd MMMM yyyy")
+        (.format date))])
+
+(defn render-date-time [date]
+  [:time.published
+    {:datetime (-> (java.text.SimpleDateFormat. "yyyy-MM-dd'T'HH:mm:ssZ")
+                   (.format date))}
+    (-> (java.text.SimpleDateFormat. "E dd MMMM yyyy")
+        (.format date))])
+
 (def header
   [:header#banner.body
    [:a {:href "/"} "Activities"]
@@ -35,7 +49,14 @@
 (defn render-blog-post [context page]
   (layout {:title (:page/title page)}
     header
-    (md/render-html (:page/body page))))
+    [:article
+      [:h1.entry-title [:a {:href (:page/uri page)} (:page/title page)]]
+      [:div.entry-content
+        [:p.post-info
+          (render-date-time (:page/datePublished page))
+          [:span.vcard.author [:a {:href "#"} "David Wagner"]]]]
+      (md/render-html (:page/body page))]
+    [:script]))
 
 (defn render-frontpage [context page]
   (layout {:title "Activities"}
@@ -45,7 +66,7 @@
      (for [blog-post (get-blog-posts (:app/db context))]
        [:tr
          [:td [:a {:href (:page/uri blog-post)} (or (:page/title blog-post) (:page/uri blog-post))]]
-         [:td (str (:page/datePublished blog-post))]])]))
+         [:td (render-date-abbr (:page/datePublished blog-post))]])]))
 
 (defn render-page* [context page]
   (layout {:title (:page/title page)}
