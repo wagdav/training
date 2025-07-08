@@ -1,7 +1,3 @@
----
-title: About
----
-
 This is a log of my activities, mostly running, cycling and hiking.
 
 * See [my results from my favorite events]({filename}events.md)

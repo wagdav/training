@@ -1,7 +1,6 @@
----
-title: Cervélo Caledonia 5 first service
-tags: gear
----
+:page/title Cervélo Caledonia 5 first service
+:page/tags gear
+:page/body
 
 In past two months I rode 780 km with the my [Cervélo Caledonia
 5]({filename}2024-03-28-Cervelo-Caledonia-5.md).  Today I brought back to the

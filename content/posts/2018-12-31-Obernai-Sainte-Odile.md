@@ -1,7 +1,6 @@
----
-title: Obernai-Mont Sainte-Odlie
-tags: hike
----
+:page/title Obernai-Mont Sainte-Odlie
+:page/tags hike
+:page/body
 
 End of the year hike in Alsace.  Start from Obernai towards Bernardswiller and
 Saint Nabor.  There, a steep climb starts to the monastery of [Mont

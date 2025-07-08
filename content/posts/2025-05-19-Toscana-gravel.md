@@ -1,3 +1,6 @@
+:page/title Toscana Gravel 2025 
+:page/body
+
 Six of us went for a five-day bikepacking gravel cycling trip in Tuscany.  The
 tour started and ended in Siena.
 

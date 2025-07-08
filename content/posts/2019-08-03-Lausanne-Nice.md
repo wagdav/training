@@ -1,7 +1,6 @@
----
-title: Route des Grandes Alpes 2019
-tags: ride, rdga2019
----
+:page/title Route des Grandes Alpes 2019
+:page/tags ride, rdga2019
+:page/body
 
 Cycling from Lausanne to Nice in eight days.
 

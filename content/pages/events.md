@@ -1,7 +1,3 @@
----
-title: Events
----
-
 Results of my favorite race events.
 
 ## [Les Traîne-Savates](https://www.traine-savates.ch/)

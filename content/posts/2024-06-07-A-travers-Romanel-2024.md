@@ -1,7 +1,6 @@
----
-title: A travers Romanel 2024
-tags: race, running
----
+:page/title A travers Romanel 2024
+:page/tags race, running
+:page/body
 
 I participated in the running race [A travel Romanel](https://www.atraversromanel.ch/) the first time.  
 

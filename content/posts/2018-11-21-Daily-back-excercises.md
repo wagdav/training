@@ -1,6 +1,5 @@
----
-title: Daily back excercises
----
+:page/title Daily back excercises
+:page/body
 
 A series of back excercises to do daily:
 

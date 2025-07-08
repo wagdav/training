@@ -1,7 +1,6 @@
----
-title: Cervélo Caledonia 5
-tags: gear
----
+:page/title Cervélo Caledonia 5
+:page/tags gear
+:page/body
 
 Today I bought a new [Cervélo Caledonia 5](https://www.cervelo.com/en-CH/bikes/caledonia-5).  I ordered it with Shimano Di2 Ultegra set and Reserve 40/44 wheels.
 

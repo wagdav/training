@@ -1,7 +1,6 @@
----
-title: Tour du Pays de Vaud 2024
-tags: race, running
----
+:page/title Tour du Pays de Vaud 2024
+:page/tags race, running
+:page/body
 
 This year I run all six stages of the [Tour de Pays de Vaud][TPV] series.  I
 finish 5th in my age category and I'm 15th overall.

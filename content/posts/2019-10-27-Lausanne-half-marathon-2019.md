@@ -1,8 +1,7 @@
----
-title: Lausanne half-marathon 2019
-distance: 21.1
-tags: race, run
----
+:page/title Lausanne half-marathon 2019
+:page/distance 21.1
+:page/tags race, run
+:page/body
 
 # Summary
 
