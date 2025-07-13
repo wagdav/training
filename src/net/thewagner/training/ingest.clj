@@ -56,7 +56,6 @@
         (:page/title tx)
         (assoc :page/uri (get-uri file-name (:page/title tx)))))))
 
-
 (defmethod ingest/parse-file :gpx [db file-name file]
   [{:page/uri (str "/" file-name)
     :page/body (slurp file)
