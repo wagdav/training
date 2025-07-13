@@ -45,6 +45,7 @@
   (let [kind (get-page-kind file-name)
         date-published (get-publication-date file-name)]
     (for [tx txes]
+      ; Remove keys that I cannot handle yet
       (cond-> (dissoc tx :page/tags :page/distance :page/trace :page/elevation_gain :page/time)
         (and (not (:page/kind tx)) (:page/uri tx) kind)
         (assoc :page/kind kind)
