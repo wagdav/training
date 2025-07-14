@@ -95,6 +95,6 @@ End of October
 | 2009 | 21.1 km  | 1:37.58 | 4:38 min/km  |                 |
 
 
-[20km2019]: {filename}../posts/2019-05-05-20km-de-Lausanne-2019.md
-[20km2024]: {filename}../posts/2024-04-28-20km-de-Lausanne-2024.md
-[20km2025]: {filename}../posts/2025-05-04-20km-de-Lausanne-2025.md
+[20km2019]: /blog/2019/05/05/20-km-de-lausanne-2019/
+[20km2024]: /blog/2024/04/28/20-km-de-lausanne-2024/
+[20km2025]: /blog/2025/05/04/20-km-de-lausanne-2025/
