@@ -37,7 +37,7 @@
   [:time.published
     {:datetime (-> (java.text.SimpleDateFormat. "yyyy-MM-dd'T'HH:mm:ssZ")
                    (.format date))}
-    (-> (java.text.SimpleDateFormat. "E dd MMMM yyyy")
+    (-> (java.text.SimpleDateFormat. "E dd MMMM yyyy ")
         (.format date))])
 
 (def header
