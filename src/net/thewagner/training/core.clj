@@ -48,6 +48,28 @@
      [:li [:a {:href "/pages/about/"} "About"]]
      [:li [:a {:href "/pages/events/"} "Events"]]]]])
 
+(defn render-trace [trace]
+  [:div
+   [:div.gpx-trace {:style "height: 400px;"
+                    :data-gpx-trace  trace}]
+   [:a {:href trace} "GPX"]])
+
+(defn render-summary [{:page/keys [distance elevation_gain time]}]
+  (cond-> [:div]
+    time
+    (conj [:dt "Time"]
+          [:dd time])
+
+    distance
+    (conj
+      [:dt "Distance"]
+      [:dd (str distance "km")])
+
+    elevation_gain
+    (conj
+      [:dt "Elevation gain"]
+      [:dd elevation_gain])))
+
 (defn render-blog-post [context page]
   (layout {:title (:page/title page)}
     [:link {:crossorigin=""
@@ -63,6 +85,9 @@
         [:p.post-info
           (render-date-time (:page/datePublished page))
           [:span.vcard.author [:a {:href "#"} "David Wagner"]]]]
+      (when-let [trace (:page/trace page)]
+        (render-trace trace))
+      (render-summary page)
       (md/render-html (:page/body page))]
     [:script {:src "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
               :integrity "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
