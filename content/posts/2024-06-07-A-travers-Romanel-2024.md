@@ -10,7 +10,7 @@ m of elevation gain.
 
 I had no objectives for this race.  I didn't expect to be in a great running
 form.  Since the [20 km de
-Lausanne]({filename}2024-04-28-20km-de-Lausanne-2024.md) my training about
+Lausanne](2024-04-28-20km-de-Lausanne-2024.md) my training about
 cycling and I barely run.  I started the first lap too fast, but in the second
 and the third lap I found a steady pace.  The endurance was there, but the
 power in the legs was missing on the climbs.

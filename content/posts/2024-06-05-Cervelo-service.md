@@ -3,7 +3,7 @@
 :page/body
 
 In past two months I rode 780 km with the my [Cervélo Caledonia
-5]({filename}2024-03-28-Cervelo-Caledonia-5.md).  Today I brought back to the
+5](2024-03-28-Cervelo-Caledonia-5.md).  Today I brought back to the
 shop for its first checkup.  Breaks, gears, wheels, and everything else work
 well, no problems were found.
 

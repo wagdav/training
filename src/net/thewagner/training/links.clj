@@ -12,6 +12,9 @@
 (defn- normalize [path]
   (.toString (.normalize (java.net.URI. path))))
 
+(defn external-link? [href]
+  (#{"http" "https"} (.getScheme (java.net.URI. href))))
+
 (defn resolve
   "Resolves a file path, `to-file`, relative to another file's directory,
   `from-file`. Returns the canonical path of the resolved file."
@@ -24,16 +27,19 @@
   (let [db (:app/db context)
         uri (:uri context)]
     {[:a] (fn [node]
-            (let [href (.getAttribute node "href")
-                  this-file-name (first (d/q '[:find [?file-name]
-                                               :in $ ?uri
-                                               :where [_ :page/uri ?uri ?tx]
-                                                      [?tx :tx-source/file-name ?file-name]]
-                                             db uri))
-                  link-file-name (resolve this-file-name href)
-                  link-uri (first (d/q '[:find [?uri]
-                                         :in $ ?file-name
-                                         :where [_ :page/uri ?uri ?tx]
-                                                [?tx :tx-source/file-name ?file-name]]
-                                       db link-file-name))]
-              (.setAttribute node "href" link-uri)))}))
+            (let [href (.getAttribute node "href")]
+              (if (external-link? href)
+                node ; leave external links alone
+                (let [this-file-name (first (d/q '[:find [?file-name]
+                                                   :in $ ?uri
+                                                   :where [_ :page/uri ?uri ?tx]
+                                                          [?tx :tx-source/file-name ?file-name]]
+                                                 db uri))
+                      link-file-name (resolve this-file-name href)
+                      link-uri (first (d/q '[:find [?uri]
+                                             :in $ ?file-name
+                                             :where [_ :page/uri ?uri ?tx]
+                                                    [?tx :tx-source/file-name ?file-name]]
+                                           db link-file-name))]
+                  (when (and link-file-name link-uri)
+                    (.setAttribute node "href" link-uri))))))}))

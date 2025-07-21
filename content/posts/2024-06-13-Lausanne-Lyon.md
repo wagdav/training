@@ -5,8 +5,8 @@
 
 | Day   | Start     | Distance | Elevation gain | Route
 | ---   | :-------- | -------: | -------------: | :--
-| 1     | Lausanne  | 158 km   |  1198 m        | [Day 1]({static}../data/2024-ardeches/lausanne-lyon-01.gpx)
-| 2     | Belley    | 172 km   |   931 m        | [Day 2]({static}../data/2024-ardeches/lausanne-lyon-02.gpx)
+| 1     | Lausanne  | 158 km   |  1198 m        | [Day 1](../data/2024-ardeches/lausanne-lyon-01.gpx)
+| 2     | Belley    | 172 km   |   931 m        | [Day 2](../data/2024-ardeches/lausanne-lyon-02.gpx)
 | Total |           | 330 km   |  2129 m        |
 
 <div
@@ -80,4 +80,4 @@ pay attention with the heat and the accumulated fatigue.  I arrive to Irigny, a
 few km south of Lyon.  There's a short climb to reach the apartment.
 
 I'll spend the next two days in Lyon resting and sightseeing, then starts a [six
-day tour in the Ardèche]({filename}2024-06-17-Ardeche.md).
+day tour in the Ardèche](2024-06-17-Ardeche.md).
