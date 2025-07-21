@@ -21,10 +21,10 @@
   (require '[datomic.api :as d])
   (def db (d/db (:datomic/conn app)))
 
-  (first (d/q '[:find [?file-name]
-                :where [_ :page/uri "/blog/2024/06/17/ardeche-tour-2024/" ?tx]
-                       [?tx :tx-source/file-name ?file-name]]
-              db))
+  (d/q '[:find ?file-name .
+         :where [_ :page/uri "/blog/2024/06/17/ardeche-tour-2024/" ?tx]
+                [?tx :tx-source/file-name ?file-name]]
+       db)
 
   (->> (d/entity db [:page/uri "/posts/2024-06-07-A-travers-Romanel-2024/"])
        (into {}))

@@ -5,4 +5,3 @@
 :page/elevation_gain 1160m
 :page/trace /data/activity_3828956507.gpx
 :page/body
-

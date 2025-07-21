@@ -1,4 +1,4 @@
-:page/title Dents de Morcles 
+:page/title Dents de Morcles
 :page/tags run
 :page/distance 21.4
 :page/time 5:57.03

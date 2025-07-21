@@ -1,4 +1,4 @@
-:page/title Skiing in Les Marecottes 
+:page/title Skiing in Les Marecottes
 :page/tags ski
 :page/body
 

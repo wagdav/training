@@ -1,4 +1,4 @@
-:page/title Epalinges - Echallens 
+:page/title Epalinges - Echallens
 :page/time 1:54:23
 :page/distance 16.9
 :page/tags run

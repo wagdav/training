@@ -1,4 +1,4 @@
-:page/title Les Traîne-Savates 2019 
+:page/title Les Traîne-Savates 2019
 :page/distance 10.3
 :page/time 41.42,1
 :page/tags race, run

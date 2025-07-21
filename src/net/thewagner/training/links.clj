@@ -23,23 +23,26 @@
         to-file (io/file (href->file-name href))]
     (normalize (.getPath (io/file (.getParent from-file) to-file)))))
 
+(def get-file-name-by-uri
+  '[:find ?file-name .
+    :in $ ?uri
+    :where [_ :page/uri ?uri ?tx]
+           [?tx :tx-source/file-name ?file-name]])
+
+(def get-uri-by-file-name
+  '[:find ?uri .
+    :in $ ?file-name
+    :where [_ :page/uri ?uri ?tx]
+           [?tx :tx-source/file-name ?file-name]])
+
 (defn post-process [context]
   (let [db (:app/db context)
         uri (:uri context)]
     {[:a] (fn [node]
             (let [href (.getAttribute node "href")]
-              (if (external-link? href)
-                node ; leave external links alone
-                (let [this-file-name (first (d/q '[:find [?file-name]
-                                                   :in $ ?uri
-                                                   :where [_ :page/uri ?uri ?tx]
-                                                          [?tx :tx-source/file-name ?file-name]]
-                                                 db uri))
+              (when-not (external-link? href) ; leave external links alone
+                (let [this-file-name (d/q get-file-name-by-uri db uri)
                       link-file-name (resolve this-file-name href)
-                      link-uri (first (d/q '[:find [?uri]
-                                             :in $ ?file-name
-                                             :where [_ :page/uri ?uri ?tx]
-                                                    [?tx :tx-source/file-name ?file-name]]
-                                           db link-file-name))]
+                      link-uri (d/q get-uri-by-file-name db link-file-name)]
                   (when (and link-file-name link-uri)
                     (.setAttribute node "href" link-uri))))))}))

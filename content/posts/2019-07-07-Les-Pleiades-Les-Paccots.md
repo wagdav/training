@@ -5,4 +5,3 @@
 :page/elevation_gain 1620m
 :page/trace /data/2019-07-07_07-37_Sun.gpx
 :page/body
-

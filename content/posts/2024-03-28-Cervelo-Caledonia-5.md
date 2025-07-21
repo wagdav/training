@@ -14,4 +14,4 @@ Additonally, with the purchase I was offered a professional bike fit, this also 
 
 # Service history
 
-* 2024-06-05: [First service](/blog/2024/06/05/cervelo-caledonia-5-first-service/)
+* 2024-06-05: [First service](2024-06-05-Cervelo-service.md)

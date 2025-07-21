@@ -2,7 +2,7 @@
 :page/tags race, running
 :page/body
 
-I participated in the running race [A travel Romanel](https://www.atraversromanel.ch/) the first time.  
+I participated in the running race [A travel Romanel](https://www.atraversromanel.ch/) the first time.
 
 I finished the 10.5 km race in 42:57.35, corresponding to a 4:11 min/km average
 pace.  The race does three laps across Romanel-sur-Lausanne with a total of 140
