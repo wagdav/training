@@ -1,6 +1,7 @@
 (ns net.thewagner.training.core
   (:require [datomic.api :as d]
             [net.thewagner.training.ingest :as ingest]
+            [net.thewagner.training.links :as links]
             [powerpack.markdown :as md]))
 
 (defn get-blog-posts [db]
@@ -125,6 +126,7 @@
    :powerpack/content-file-suffixes ["md" "edn" "gpx"]
    :powerpack/create-ingest-tx #'ingest/create-tx
    :powerpack/log-level :debug
+   :powerpack/page-post-process-fns [#'links/post-process]
    :powerpack/render-page #'render-page
    :optimus/bundles {"app.css"
                      {:public-dir "public"
