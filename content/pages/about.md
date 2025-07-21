@@ -1,6 +1,6 @@
 This is a log of my activities, mostly running, cycling and hiking.
 
-* See [my results from my favorite events](/pages/events/)
+* See [my results from my favorite events](events.md)
 * See [workout specific updates](/)
 
 # Credits
