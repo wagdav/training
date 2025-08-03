@@ -128,6 +128,9 @@
    :powerpack/log-level :debug
    :powerpack/page-post-process-fns [#'links/post-process]
    :powerpack/render-page #'render-page
+   :optimus/assets [{:public-dir "public"
+                     :paths [#".*\.png"
+                             #".*\.webp"]}]
    :optimus/bundles {"app.css"
                      {:public-dir "public"
                       :paths ["/main.css"]}
