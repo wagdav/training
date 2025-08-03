@@ -15,7 +15,7 @@
 (defn external-link? [href]
   (#{"http" "https"} (.getScheme (java.net.URI. href))))
 
-(defn resolve
+(defn resolve-local-path
   "Resolves a file path, `to-file`, relative to another file's directory,
   `from-file`. Returns the canonical path of the resolved file."
   [from href]
@@ -42,7 +42,7 @@
             (let [href (.getAttribute node "href")]
               (when-not (external-link? href) ; leave external links alone
                 (let [this-file-name (d/q get-file-name-by-uri db uri)
-                      link-file-name (resolve this-file-name href)
+                      link-file-name (resolve-local-path this-file-name href)
                       link-uri (d/q get-uri-by-file-name db link-file-name)]
                   (when (and link-file-name link-uri)
                     (.setAttribute node "href" link-uri))))))}))

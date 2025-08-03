@@ -4,12 +4,12 @@
 
 (deftest links
   (testing "files in the same directory"
-    (is (= (sut/resolve "posts/from.md", "/to.md")
+    (is (= (sut/resolve-local-path "posts/from.md", "/to.md")
            "posts/to.md"))
-    (is (= (sut/resolve "posts/from.md", "to.md")
+    (is (= (sut/resolve-local-path "posts/from.md", "to.md")
            "posts/to.md"))
-    (is (= (sut/resolve "posts/from.md", "././to.md")
+    (is (= (sut/resolve-local-path "posts/from.md", "././to.md")
            "posts/to.md"))
-    (is (= (sut/resolve "posts/sub/from.md", "../to.md")
+    (is (= (sut/resolve-local-path "posts/sub/from.md", "../to.md")
            "posts/to.md"))))
 
