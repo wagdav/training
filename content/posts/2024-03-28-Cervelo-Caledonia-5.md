@@ -16,3 +16,4 @@ Additonally, with the purchase I was offered a professional bike fit, this also 
 # Service history
 
 * 2024-06-05: [First service]({filename}2024-06-05-Cervelo-service.md)
+* 2025-07-26: [4000km]({filename}2025-09-05-Cervelo-service.md)
