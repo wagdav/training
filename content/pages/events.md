@@ -31,6 +31,7 @@ April-May
 
 | Year             | Distance | Time   | Average pace | Comment        |
 | ----             | -------- | ------- | ------------ | --------------- |
+| [2026][20km2026] | 20 km    | 1:21.32 | 4:07 min/km  |                 |
 | [2025][20km2025] | 20 km    | 1:19.05 | 3:57 min/km  | PB              |
 | [2024][20km2024] | 20 km    | 1:20.27 | 4:06 min/km  |                 |
 | 2023             | 20 km    | 1:25.34 | 4:19 min/km  |                 |
@@ -104,6 +105,7 @@ End of October
 [20km2019]: {filename}../posts/2019-05-05-20km-de-Lausanne-2019.md
 [20km2024]: {filename}../posts/2024-04-28-20km-de-Lausanne-2024.md
 [20km2025]: {filename}../posts/2025-05-04-20km-de-Lausanne-2025.md
+[20km2026]: {filename}../posts/2026-04-26-20km-de-Lausanne-2026.md
 [MF2025]: {filename}../posts/2025-10-05-Morat-Fribourg-2025.md
 [MF2019]: {filename}../posts/2019-10-06-Morat-Fribourg-2019.md
 [MF2018]: {filename}../posts/2018-10-07-Morat-Fribourg-2018.md
