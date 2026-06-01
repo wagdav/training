@@ -14,14 +14,6 @@
         pelican
       ]);
 
-      yarnEnv = pkgs.mkYarnModules rec {
-        name = "training-thewagner-net-1.0.0";
-        pname = "training-thewagner-net";
-        packageJSON = ./package.json;
-        yarnLock = ./yarn.lock;
-        version = "1.0.0";
-      };
-
     in
     rec {
 
@@ -35,17 +27,22 @@
         site = pkgs.stdenv.mkDerivation {
           name = "training-thewagner-net-${self.shortRev or "dirty"}";
 
-          nativeBuildInputs = [ pythonEnv pkgs.yarn ];
+          yarnOfflineCache = pkgs.fetchYarnDeps {
+            yarnLock = self + "/yarn.lock";
+            hash = "sha256-hIsLQ7o0DXFv1jIQpALKbkGSEg6mA1a67zTH6de3R9Y=";
+          };
+
+          nativeBuildInputs = [
+            pythonEnv
+            pkgs.nodejs
+            pkgs.yarn
+            pkgs.yarnBuildHook
+            pkgs.yarnConfigHook
+          ];
 
           src = self;
 
-          buildPhase = ''
-            cp -r ${yarnEnv}/node_modules .
-            yarn \
-              --non-interactive \
-              --offline \
-              run webpack
-          '';
+          yarnBuildScript = "webpack";
 
           installPhase = ''
             pelican \
