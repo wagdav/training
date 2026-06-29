@@ -55,6 +55,8 @@
       };
 
       checks."${system}" = {
+        site = self.packages."${system}".site;
+
         shellcheck = pkgs.runCommand "shellcheck"
           {
             buildInputs = with pkgs; [ shellcheck ];
