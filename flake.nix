@@ -15,7 +15,7 @@
       ]);
 
     in
-    rec {
+    {
 
       devShells."${system}".default = pkgs.mkShell {
         buildInputs = [ pkgs.yarn pythonEnv pkgs.ghp-import ];
@@ -40,7 +40,7 @@
             pkgs.yarnConfigHook
           ];
 
-          src = self;
+          src = pkgs.lib.cleanSource self;
 
           yarnBuildScript = "webpack";
 
@@ -49,7 +49,7 @@
               --fatal warnings \
               --settings publishconf.py \
               --output $out \
-              ${./content}
+              content
           '';
         };
       };
