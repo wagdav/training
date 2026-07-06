@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Activities</title><link href="https://training.thewagner.net/" rel="alternate"/><link href="https://training.thewagner.net/feeds/all.atom.xml" rel="self"/><id>https://training.thewagner.net/</id><updated>2026-07-12T00:00:00+02:00</updated><entry><title>Austria 2026</title><link href="https://training.thewagner.net/blog/2026/07/12/austria-2026/" rel="alternate"/><published>2026-07-12T00:00:00+02:00</published><updated>2026-07-12T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2026-07-12:/blog/2026/07/12/austria-2026/</id><content type="html">&lt;p&gt;&lt;div
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Activities</title><link href="https://training.thewagner.net/" rel="alternate"/><link href="https://training.thewagner.net/feeds/all.atom.xml" rel="self"/><id>https://training.thewagner.net/</id><updated>2026-07-12T00:00:00+02:00</updated><entry><title>Austria 2026</title><link href="https://training.thewagner.net/blog/2026/07/12/austria-2026/" rel="alternate"/><published>2026-07-12T00:00:00+02:00</published><updated>2026-07-12T00:00:00+02:00</updated><author><name>David Wagner</name></author><id>tag:training.thewagner.net,2026-07-12:/blog/2026/07/12/austria-2026/</id><summary type="html">&lt;p&gt;&lt;div
   class="gpx-trace"
   style="height: 400px;"
   data-gpx-trace="/data/2026-austria/Austria 1.gpx,/data/2026-austria/Austria 2.gpx,/data/2026-austria/Austria 3.gpx,/data/2026-austria/Austria 4.gpx,/data/2026-austria/Austria 5.gpx,/data/2026-austria/Austria 6.gpx,/data/2026-austria/Austria 7.gpx"&gt;
@@ -26,8 +26,75 @@
 &lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;Lech&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;98 km&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;1564 m&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 2.gpx"&gt;Day 2&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Landeck&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;&lt;/td&gt;
 &lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 3.gpx"&gt;Day 3&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;St Leonhard in Passeier&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 4.gpx"&gt;Day 4&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Bruneck (IT)&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 5.gpx"&gt;Day 5&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Heiligenblut&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 6.gpx"&gt;Day 5&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;St. Johann in Tirol&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 7.gpx"&gt;Day 5&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;&lt;div
+  class="gpx-trace"
+  style="height: 400px;"
+  data-gpx-trace="/data/2026-austria/Austria 1.gpx,/data/2026-austria/Austria 2.gpx,/data/2026-austria/Austria 3.gpx,/data/2026-austria/Austria 4.gpx,/data/2026-austria/Austria 5.gpx,/data/2026-austria/Austria 6.gpx,/data/2026-austria/Austria 7.gpx"&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Day&lt;/th&gt;
+&lt;th style="text-align: left;"&gt;Start&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;Distance&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;Elevation gain&lt;/th&gt;
+&lt;th style="text-align: left;"&gt;Route&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Innsbruck&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;130 km&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;2205 m&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 1.gpx"&gt;Day 1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Lech&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;98 km&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;1564 m&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;&lt;a href="https://training.thewagner.net/data/2026-austria/Austria 2.gpx"&gt;Day 2&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
