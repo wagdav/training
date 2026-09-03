@@ -5,11 +5,13 @@
 
   outputs = { self, nixpkgs }:
     let
-      system = "x86_64-linux";
+      inherit (nixpkgs) lib;
 
-      pkgs = import nixpkgs { inherit system; };
+      forAllSystems = f:
+        lib.genAttrs lib.systems.flakeExposed (system:
+          f (import nixpkgs { inherit system; }));
 
-      pythonEnv = pkgs.python3.withPackages (ps: with ps; [
+      pythonEnvFor = pkgs: pkgs.python3.withPackages (ps: with ps; [
         markdown
         pelican
       ]);
@@ -17,11 +19,13 @@
     in
     {
 
-      devShells."${system}".default = pkgs.mkShell {
-        buildInputs = [ pkgs.yarn pythonEnv pkgs.ghp-import ];
-      };
+      devShells = forAllSystems (pkgs: {
+        default = pkgs.mkShell {
+          buildInputs = [ pkgs.yarn (pythonEnvFor pkgs) pkgs.ghp-import ];
+        };
+      });
 
-      packages."${system}" = rec {
+      packages = forAllSystems (pkgs: rec {
         default = site;
 
         site = pkgs.stdenv.mkDerivation {
@@ -33,7 +37,7 @@
           };
 
           nativeBuildInputs = [
-            pythonEnv
+            (pythonEnvFor pkgs)
             pkgs.nodejs
             pkgs.yarn
             pkgs.yarnBuildHook
@@ -52,10 +56,10 @@
               content
           '';
         };
-      };
+      });
 
-      checks."${system}" = {
-        site = self.packages."${system}".site;
+      checks = forAllSystems (pkgs: {
+        site = self.packages.${pkgs.system}.site;
 
         shellcheck = pkgs.runCommand "shellcheck"
           {
@@ -65,6 +69,6 @@
             mkdir $out
             shellcheck --shell bash ${./scripts}/*
           '';
-      };
+      });
     };
 }
