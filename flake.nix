@@ -21,7 +21,7 @@
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
-          buildInputs = [ pkgs.yarn (pythonEnvFor pkgs) pkgs.ghp-import ];
+          buildInputs = [ (pythonEnvFor pkgs) pkgs.ghp-import ];
         };
       });
 
@@ -31,22 +31,13 @@
         site = pkgs.stdenv.mkDerivation {
           name = "training-thewagner-net-${self.shortRev or "dirty"}";
 
-          yarnOfflineCache = pkgs.fetchYarnDeps {
-            yarnLock = self + "/yarn.lock";
-            hash = "sha256-52E/QG3PyUOmQ9YPFJB78o46OY32jTCej7w/XZ3Xp9o=";
-          };
-
           nativeBuildInputs = [
             (pythonEnvFor pkgs)
-            pkgs.nodejs
-            pkgs.yarn
-            pkgs.yarnBuildHook
-            pkgs.yarnConfigHook
           ];
 
           src = pkgs.lib.cleanSource self;
 
-          yarnBuildScript = "webpack";
+          dontBuild = true;
 
           installPhase = ''
             pelican \

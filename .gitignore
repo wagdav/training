@@ -4,7 +4,4 @@ publishconf.pyc
 
 __pycache__
 
-node_modules
-theme/static/dist
-
 result*

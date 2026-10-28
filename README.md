@@ -4,27 +4,18 @@ The source of https://training.thewagner.net
 
 # Development
 
-## Updating the yarn offline cache hash
+The site is built with [Pelican](https://getpelican.com/). GPX trace maps use
+[Leaflet](https://leafletjs.com/) loaded from a CDN at runtime, so there is no
+JavaScript build step.
 
-`flake.nix` pins a `yarnOfflineCache` hash. Whenever `yarn.lock` changes, that
-hash must be updated or the build fails with a hash mismatch.
-
-Print the new hash in the SRI form used by `flake.nix`:
+Start a local autoreloading server:
 
 ```sh
-nix shell nixpkgs#prefetch-yarn-deps --command prefetch-yarn-deps yarn.lock 2>&1 >/dev/null \
-  | grep -E '^[0-9a-z]{52}$' \
-  | xargs nix hash convert --hash-algo sha256 --to sri
+scripts/devserver.sh
 ```
 
-`prefetch-yarn-deps` writes its nix32 hash to stderr alongside progress output,
-hence the `2>&1 >/dev/null` and `grep`. Update the `hash` in the
-`yarnOfflineCache` block of `flake.nix` with the result.
-
-Behind a TLS-intercepting proxy, `prefetch-yarn-deps` fails with
-`UNABLE_TO_GET_ISSUER_CERT_LOCALLY`. Point node at your corporate root
-certificate by prefixing the command:
+Build the site with Nix:
 
 ```sh
-NODE_EXTRA_CA_CERTS=/path/to/corporate-root.crt nix shell ...
+nix-build -A packages.x86_64-linux.site
 ```
